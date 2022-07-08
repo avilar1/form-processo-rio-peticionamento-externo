@@ -1,0 +1,221 @@
+:root {
+    --branco: #fff;
+    --offwhite-fundo: #f5f5f5;
+    --azul-turquesa: #02b0d6;
+    --verde-agua: #09b88a;
+    --cinza-letra: #7b7b7b;
+    --cinza-claro-campo: #c3c0c0;
+
+}
+
+@font-face {
+    font-family: "museo";
+    src: url(../fonts/MuseoSans_500.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "museo700";
+    src: url(../fonts/museo-sans-700.ttf) format("truetype");
+}
+
+::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    font-family: "museo";
+    src: url(../fonts/MuseoSans_500.otf) format("truetype");
+    font-weight: 400;
+    opacity: 0.1;
+    color: var(--cinza-claro-campo);
+}
+
+/*------------------inicial--------------------*/
+._main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+
+}
+
+._container {
+
+    min-height: 800px;
+    width: 1010px;
+    height: 1756px;
+    padding: 0 0 40px;
+    background-color: var(--offwhite-fundo);
+    padding: 32px 36px 162px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 38, 0.25);
+    border: solid 1px #ccc;
+    background-color: var(--branco);
+}
+
+._group1 {
+    margin-bottom: 20px;
+}
+
+._group2 {
+
+    margin-top: 53px;
+}
+
+.__group3 {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.__group3-in {
+    margin-top: 20px;
+}
+
+.__group4 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.__group4-in {
+    margin-top: 2rem;
+}
+
+.__group-end {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #09b88a;
+    font-family: museo;
+}
+
+.__label_initial {
+
+    color: var(--cinza-letra);
+
+
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.__span_initial {
+    display: block;
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+.__span_quite {
+    padding: 16px 0 16px 0;
+
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+.__input_quite {
+    max-width: 130px;
+    height: auto;
+}
+
+.__input_quite2 {
+    max-width: 100px;
+    height: auto;
+}
+
+.__input_quite3 {
+    padding-left: 0px;
+}
+
+.__span_quite-4 {
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+.__card-header-autor {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.__file-group {
+    display: grid;
+    align-items: flex-end;
+}
+
+@media (max-width: 480px) {
+    .__file-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .__file-group-item {
+        align-self: center;
+
+    }
+}
+
+
+    .__label_initial-likeplaceholder {
+        font-family: "museo";
+        src: url(../fonts/MuseoSans_500.otf) format("truetype");
+        font-weight: 200;
+
+        color: var(--cinza-claro-campo);
+    }
+
+    @media (max-width: 480px) {
+        .__card-header-autor {
+            display: none;
+
+        }
+    }
+
+
+    /*essas duas classes acertam as margens esquerda e direita dos formulários de dois itens*/
+    @media screen {
+
+
+        ._col-autor-l {
+            padding-left: 0px !important;
+
+        }
+
+        ._col-autor-r {
+            padding-right: 0px !important;
+        }
+
+        
+    }
+
+    @media (max-width: 990px) {
+        ._col-autor-l {
+            padding-right: 0px !important;
+
+        }
+
+        ._col-autor-r {
+            padding-left: 0px !important;
+        }
+    }
+
+    /*fim classes responsivas de duas colunas*/
