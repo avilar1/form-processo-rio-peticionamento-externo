@@ -162,6 +162,14 @@ textarea:-moz-placeholder {
     align-items: flex-end;
 }
 
+
+.__icon-file{
+    background: url(../svg/paperclip\ 2.svg) no-repeat left center;
+    padding-left:20px;
+}
+
+
+
 @media (max-width: 480px) {
     .__file-group {
         display: flex;
