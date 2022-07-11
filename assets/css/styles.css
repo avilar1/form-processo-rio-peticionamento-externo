@@ -41,7 +41,7 @@ textarea:-moz-placeholder {
 
     min-height: 800px;
     width: 1010px;
-    height: 1756px;
+    height: auto;
     padding: 0 0 40px;
     background-color: var(--offwhite-fundo);
     padding: 32px 36px 162px;
@@ -88,7 +88,7 @@ textarea:-moz-placeholder {
     font-family: museo;
 }
 
-.__label_initial {
+.__label-initial {
 
     color: var(--cinza-letra);
 
@@ -101,7 +101,7 @@ textarea:-moz-placeholder {
     line-height: 20px;
 }
 
-.__span_initial {
+.__span-initial {
     display: block;
     font-family: museo, museo-sans, sans-serif;
     font-style: normal;
@@ -113,7 +113,7 @@ textarea:-moz-placeholder {
     color: #212529;
 }
 
-.__span_quite {
+.__span-quite {
     padding: 16px 0 16px 0;
 
     font-family: museo, museo-sans, sans-serif;
@@ -126,21 +126,7 @@ textarea:-moz-placeholder {
     color: #212529;
 }
 
-.__input_quite {
-    max-width: 130px;
-    height: auto;
-}
-
-.__input_quite2 {
-    max-width: 100px;
-    height: auto;
-}
-
-.__input_quite3 {
-    padding-left: 0px;
-}
-
-.__span_quite-4 {
+.__span-quite-4 {
     font-family: museo, museo-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -151,10 +137,28 @@ textarea:-moz-placeholder {
     color: #212529;
 }
 
-.__card-header-autor {
-    display: flex;
-    justify-content: space-around;
+.__input-quite {
+    max-width: 130px;
+    height: auto;
+}
 
+.__input-quite2 {
+    max-width: 100px;
+    height: auto;
+}
+
+.__input-quite3 {
+    padding-left: 0px;
+}
+
+.__input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__table-autor {
+    padding-left: 2rem !important;
 }
 
 .__file-group {
@@ -163,14 +167,20 @@ textarea:-moz-placeholder {
 }
 
 
-.__icon-file{
+.__icon-file {
     background: url(../svg/paperclip\ 2.svg) no-repeat left center;
-    padding-left:20px;
+    padding-left: 20px;
+}
+
+.__label-button {
+    text-align: end;
 }
 
 
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 410px) {
     .__file-group {
         display: flex;
         align-items: center;
@@ -180,50 +190,100 @@ textarea:-moz-placeholder {
         align-self: center;
 
     }
+
+    .__label-button {
+        text-align: start;
+    }
 }
 
 
-    .__label_initial-likeplaceholder {
-        font-family: "museo";
-        src: url(../fonts/MuseoSans_500.otf) format("truetype");
-        font-weight: 200;
+.__label-initial-likeplaceholder {
+    font-family: "museo";
+    src: url(../fonts/MuseoSans_500.otf) format("truetype");
+    font-weight: 200;
 
-        color: var(--cinza-claro-campo);
+    color: var(--cinza-claro-campo);
+}
+
+.__close-notinline {
+    display: none;
+}
+
+/*max-width: 767px*/
+@media (max-width: 992px) {
+    .__row-por-item {
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--offwhite-fundo);
+        padding: 15px 0 15px 0;
     }
 
-    @media (max-width: 480px) {
-        .__card-header-autor {
-            display: none;
+    .__item-da-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-        }
+    .__input-group-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .__card-header-autor {
+        display: none;
+
+    }
+
+    .__close-inline {
+        display: none;
+    }
+
+    .__close-notinline {
+        display: inline-block;
+    }
+
+    .card {
+        border: none !important;
+    }
+
+    .panel {
+        border: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {   
+    .col-md-6 {
+        flex: 0 0 auto;
+         width: auto !important; 
+    }
+}
+
+/*essas duas classes acertam as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
+@media screen {
+
+
+    ._col-autor-l {
+        padding-left: 0px !important;
+
+    }
+
+    ._col-autor-r {
+        padding-right: 0px !important;
     }
 
 
-    /*essas duas classes acertam as margens esquerda e direita dos formulários de dois itens*/
-    @media screen {
+}
 
+@media (max-width: 992px) {
+    ._col-autor-l {
+        padding-right: 0px !important;
 
-        ._col-autor-l {
-            padding-left: 0px !important;
-
-        }
-
-        ._col-autor-r {
-            padding-right: 0px !important;
-        }
-
-        
     }
 
-    @media (max-width: 990px) {
-        ._col-autor-l {
-            padding-right: 0px !important;
-
-        }
-
-        ._col-autor-r {
-            padding-left: 0px !important;
-        }
+    ._col-autor-r {
+        padding-left: 0px !important;
     }
+}
 
-    /*fim classes responsivas de duas colunas*/
+/*fim classes responsivas de duas colunas*/
