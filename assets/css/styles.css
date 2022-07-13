@@ -151,6 +151,14 @@ textarea:-moz-placeholder {
     display: grid;
     align-items: flex-end;
 }
+/* .__group4 li {
+    position: relative;
+}
+
+.__group4 li span{
+    position: absolute;
+    left: -10px;
+} */
 
 
 /*inicio falso botão*/

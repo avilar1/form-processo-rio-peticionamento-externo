@@ -18,14 +18,17 @@
     font-family: museo;
     color: var(--branco);
 
+
+    height: 20px;
+    padding: 14px;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    padding: 14px;
     border-radius: 60px;
     border: solid 1px var(--branco);
+    align-self: center;
 }
 
 .__painel-login p {
@@ -62,8 +65,8 @@
 
     .__painel-login{
         margin-top: 32px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 
 
