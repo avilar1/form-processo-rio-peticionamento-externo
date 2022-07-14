@@ -1,0 +1,336 @@
+@import url(base.css);
+@import url(cabecalho.css);
+
+
+
+::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    font-family: "museo";
+    src: url(../fonts/MuseoSans_500.otf) format("truetype");
+    font-weight: 400;
+    opacity: 0.1;
+    color: var(--cinza-claro-campo);
+}
+
+/*------------------inicial--------------------*/
+.__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding-top: 20px;
+
+}
+
+.__container {
+
+    min-height: 800px;
+    width: 1010px;
+    height: auto;
+    padding: 0 0 40px;
+    background-color: var(--offwhite-fundo);
+    padding: 32px 36px 162px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 38, 0.25);
+    border: solid 1px #ccc;
+    background-color: var(--branco);
+}
+
+.__group1 {
+    margin-bottom: 20px;
+}
+
+.__group2 {
+
+    margin-top: 53px;
+}
+
+.__group3 {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.__group3-in {
+    margin-top: 20px;
+}
+
+.__group4 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.__group4-in {
+    margin-top: 2rem;
+}
+
+.__group-end {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #09b88a;
+    font-family: museo;
+}
+
+.__label-initial {
+
+    color: var(--cinza-letra);
+
+
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.__span-initial {
+    display: block;
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+.__span-quite {
+    padding: 16px 0 16px 0;
+
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+.__span-quite-4 {
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+.__input-quite {
+    max-width: 130px;
+    height: auto;
+}
+
+.__input-quite2 {
+    max-width: 120px;
+    height: auto;
+}
+
+.__input-quite3 {
+    padding-left: 0px;
+}
+
+.__input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__table-autor {
+    padding-left: 2rem !important;
+}
+
+.__file-group {
+    display: grid;
+    align-items: flex-end;
+}
+/* .__group4 li {
+    position: relative;
+}
+
+.__group4 li span{
+    position: absolute;
+    left: -10px;
+} */
+
+
+/*inicio falso botão*/
+
+.__button-file{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+.__icon-file:hover path{
+    fill: #f5f5f5 !important;
+}
+
+.__path-icon:hover{
+    fill: #f5f5f5 !important;
+}
+
+.__button-file:hover{
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+.__label-button:hover{
+    color: #f5f5f5 !important;
+}
+
+.__icon-file:hover + .__label-button{
+    color: #f5f5f5 !important;
+}
+
+.__label-button:hover ~ .__path-icon {
+    fill: #f5f5f5 !important;
+}
+
+.__label-button {
+    
+    text-align: end;
+    color: var(--verde-agua) !important;
+    height: 100%;
+    padding: 15px 16px 13px 0;
+   
+}
+
+/*fim falso botão*/
+
+
+.__button-cancel{
+    color: var(--verde-agua) !important;
+}
+
+.__button-cancel:hover{
+    color: #198754 !important;
+    background-color: transparent !important;
+}
+
+.__button-submit{
+    background-color: var(--verde-agua) !important;
+    border-color: var(--verde-agua) !important;
+}
+
+.__button-submit:hover{
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+
+
+@media (max-width: 410px) {
+    .__file-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .__file-group-item {
+        align-self: center;
+
+    }
+
+    .__label-button {
+        text-align: start;
+    }
+}
+
+
+.__label-initial-likeplaceholder {
+    font-family: "museo";
+    src: url(../fonts/MuseoSans_500.otf) format("truetype");
+    font-weight: 200;
+
+    color: var(--cinza-claro-campo);
+}
+
+.__close-notinline {
+    display: none;
+}
+
+/*max-width: 767px*/
+@media (max-width: 992px) {
+    .__row-por-item {
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--offwhite-fundo);
+        padding: 15px 0 15px 0;
+    }
+
+    .__item-da-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .__input-group-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .__card-header-autor {
+        display: none;
+
+    }
+
+    .__close-inline {
+        display: none;
+    }
+
+    .__close-notinline {
+        display: inline-block;
+    }
+
+    .card {
+        border: none !important;
+    }
+
+    .panel {
+        border: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {   
+    .col-md-6 {
+        flex: 0 0 auto;
+         width: auto !important; 
+    }
+}
+
+/*essas duas classes acertam as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
+@media screen {
+
+
+    .__col-autor-l {
+        padding-left: 0px !important;
+
+    }
+
+    .__col-autor-r {
+        padding-right: 0px !important;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .__col-autor-l {
+        padding-right: 0px !important;
+
+    }
+
+    .__col-autor-r {
+        padding-left: 0px !important;
+    }
+}
+
+/*fim classes responsivas de duas colunas*/
