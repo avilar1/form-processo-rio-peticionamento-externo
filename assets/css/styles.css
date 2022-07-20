@@ -3,18 +3,8 @@
 
 
 
-::-webkit-input-placeholder,
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    font-family: "museo";
-    src: url(../fonts/MuseoSans_500.otf) format("truetype");
-    font-weight: 400;
-    opacity: 0.1;
-    color: var(--cinza-claro-campo);
-}
-
 /*------------------inicial--------------------*/
-._main {
+.__main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +13,7 @@ textarea:-moz-placeholder {
 
 }
 
-._container {
+.__container {
 
     min-height: 800px;
     width: 1010px;
@@ -36,11 +26,11 @@ textarea:-moz-placeholder {
     background-color: var(--branco);
 }
 
-._group1 {
+.__group1 {
     margin-bottom: 20px;
 }
 
-._group2 {
+.__group2 {
 
     margin-top: 53px;
 }
@@ -310,12 +300,12 @@ textarea:-moz-placeholder {
 @media screen {
 
 
-    ._col-autor-l {
+    .__col-autor-l {
         padding-left: 0px !important;
 
     }
 
-    ._col-autor-r {
+    .__col-autor-r {
         padding-right: 0px !important;
     }
 
@@ -323,12 +313,12 @@ textarea:-moz-placeholder {
 }
 
 @media (max-width: 992px) {
-    ._col-autor-l {
+    .__col-autor-l {
         padding-right: 0px !important;
 
     }
 
-    ._col-autor-r {
+    .__col-autor-r {
         padding-left: 0px !important;
     }
 }
