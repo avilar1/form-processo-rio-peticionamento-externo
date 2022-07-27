@@ -1,0 +1,11 @@
+@import url(base.css);
+
+.__group4 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.__group4-in {
+    margin-top: 2rem;
+}
