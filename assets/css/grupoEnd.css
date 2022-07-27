@@ -1,0 +1,29 @@
+@import url(base.css);
+
+.__group-end {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #09b88a;
+    font-family: museo;
+}
+
+.__button-cancel{
+    color: var(--verde-agua) !important;
+}
+
+.__button-cancel:hover{
+    color: #198754 !important;
+    background-color: transparent !important;
+}
+
+.__button-submit{
+    background-color: var(--verde-agua) !important;
+    border-color: var(--verde-agua) !important;
+}
+
+.__button-submit:hover{
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
