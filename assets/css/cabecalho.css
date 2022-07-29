@@ -54,7 +54,7 @@
     font-size: 21px;
     line-height: 0.95;
     color: var(--azul-turquesa);
-    padding: 15px;
+    padding: 15px 0px 15px 36px;
     justify-content: flex-start;
 }
 

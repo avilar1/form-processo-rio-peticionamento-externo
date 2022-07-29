@@ -1,5 +1,18 @@
 @import url(base.css);
 
-.__group2 {
-    margin-top: 53px;
+/* .__group2 {
+    margin-top: 40px;
+} */
+
+.__acc-button{
+    padding-left: 2px !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--branco) !important;
+}
+
+.accordion-button:focus{
+    border: none !important;
+    box-shadow: none !important;
 }
