@@ -9,21 +9,33 @@
     font-family: museo;
 }
 
-.__button-cancel{
+.__button-cancel {
     color: var(--verde-agua) !important;
+
+    line-height: 20px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    width: 74px !important;
 }
 
-.__button-cancel:hover{
+.__button-cancel:hover {
     color: #198754 !important;
     background-color: transparent !important;
 }
 
-.__button-submit{
+.__button-submit {
     background-color: var(--verde-agua) !important;
     border-color: var(--verde-agua) !important;
+    line-height: 20px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    
+    
 }
 
-.__button-submit:hover{
+.__button-submit:hover {
     background-color: #198754 !important;
     border-color: #198754 !important;
+
+    
 }

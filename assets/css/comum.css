@@ -33,15 +33,10 @@
     color: #212529;
 }
 
-.__span-quite-4 {
-    font-family: museo, museo-sans, sans-serif;
-    font-style: normal;
-    font-weight: 500;
 
-    font-size: 15px;
-    line-height: 20px;
-    margin-top: 5px;
-    color: #212529;
+.__group-in-input{
+    padding: 4px !important;
+    
 }
 
 .__input-quite {
@@ -54,23 +49,33 @@
     height: auto;
 }
 
-.__input-quite3 {
-    padding-left: 0px;
-    margin-right: 37px ;
-}
-
-.__input-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.__table-autor {
-    padding-left: 2rem !important;
-}
-
 .__grupo{
     margin-top: 40px;
+}
+
+.form-control{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 30px
+}
+
+.__titulo-de-grupo{
+    margin-bottom: 20px;
+}
+
+.__col-autor-r{
+    padding-right: 36px !important;
+}
+
+.__label-initial-likeplaceholder {
+    font-family: museo;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--cinza-claro-campo);
+}
+
+.__close-notinline {
+    display: none;
 }
 
 
@@ -81,18 +86,6 @@
     }
 }
 
-
-.__label-initial-likeplaceholder {
-    font-family: "museo";
-    src: url(../fonts/MuseoSans_500.otf) format("truetype");
-    font-weight: 200;
-
-    color: var(--cinza-claro-campo);
-}
-
-.__close-notinline {
-    display: none;
-}
 
 @media (max-width: 992px) {
 
@@ -126,21 +119,8 @@
     }
 }
 
-/*essas duas classes acertam as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
-@media screen {
+/*essas classe acerta as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
 
-
-    .__col-autor-l {
-        padding-left: 0px !important;
-
-    }
-
-    .__col-autor-r {
-        padding-right: 0px !important;
-    }
-
-
-}
 
 @media (max-width: 992px) {
     .__col-autor-l {

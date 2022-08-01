@@ -15,11 +15,22 @@
 
     min-height: 800px;
     width: 687px;
+    min-width: 310px;
     height: auto;
-    padding: 0 0 40px;
     background-color: var(--offwhite-fundo);
     padding: 32px 36px 162px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 38, 0.25);
     border: solid 1px #ccc;
     background-color: var(--branco);
+}
+
+@media screen and (max-width: 480px) {
+    
+    .__container{
+        padding: 32px 15px 162px;
+    }
+
+    .__main{
+        padding-top: 0px;
+    }
 }

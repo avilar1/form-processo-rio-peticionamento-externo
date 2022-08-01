@@ -19,7 +19,9 @@ file.addEventListener('input', (e) => {
             console.log("here is a file name: " + name);
 
             let divRow = document.createElement("div");
+            let divRowD = document.createElement("div");
             let spanInputg = document.createElement("span");
+            let closeD = document.createElement("button");
             let divg = document.createElement("div");
             let text = document.createElement("input");
             let close = document.createElement("button");
@@ -27,11 +29,17 @@ file.addEventListener('input', (e) => {
             divRow.classList.add("__row")
             divRow.setAttribute("data-control", k)
 
+            divRowD.classList.add("__row-descricao")
+
             spanInputg.classList.add("__span-initial5")
+
+            closeD.classList.add("btn-close", "__close-line", "btn-sm")
+            closeD.setAttribute("ariaLabel", "close")
+            closeD.setAttribute("onclick", "remove(this.parentElement.parentElement)")
 
             divg.classList.add("__input-group")
 
-            text.classList.add("form-control", "__input-quite5")
+            text.classList.add("form-control", "__input-quite5", "__group-in-input")
             text.id = "file-item-descricao" + [i]
             text.value = ""
             text.setAttribute("placeholder", "descreva o documento")
@@ -41,7 +49,9 @@ file.addEventListener('input', (e) => {
             close.setAttribute("onclick", "remove(this.parentElement.parentElement)")
 
             Row.appendChild(divRow)
-            divRow.appendChild(spanInputg)
+            divRow.appendChild(divRowD)
+            divRowD.appendChild(spanInputg)
+            divRowD.appendChild(closeD)
             divRow.appendChild(divg)
             divg.appendChild(text)
             divg.appendChild(close)
