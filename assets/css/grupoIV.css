@@ -1,11 +1,188 @@
 @import url(base.css);
 
 .__group4 {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
 
-.__group4-in {
-    margin-top: 2rem;
+.__input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.card-body {
+    padding: 0px !important;
+}
+
+.__arquivos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 14px;
+}
+
+.__row-botao {
+    justify-content: flex-end;
+    padding-right: 0px;
+}
+
+.__row-titulo {
+    border-bottom: solid 1px #cccccc;
+    padding-bottom: 14px;
+}
+
+.__input-quite5 {
+    font-family: museo, museo-sans, sans-serif;
+}
+
+.__card-body-autor {
+    padding-top: 0px !important;
+}
+
+.__close-inline {
+    margin-right: 15px;
+    margin-left: 2px;
+}
+
+.__close-line {
+    display: none;
+}
+
+.__span-initial5 {
+    display: block;
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    color: #212529;
+    align-self: center;
+    margin-left: 16px;
+}
+
+.__card-header-autor {
+    margin-bottom: 0px !important;
+}
+
+.btn-close{
+    height: 0em !important;
+}
+
+/*inicio falso botão*/
+
+
+.__icon-file:hover path {
+    fill: #f5f5f5 !important;
+}
+
+.__path-icon:hover {
+    fill: #f5f5f5 !important;
+}
+
+.__button-file:hover {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+.__button-file{
+    margin-bottom: 3px;
+}
+
+.__label-button:hover {
+    color: #f5f5f5 !important;
+}
+
+.__icon-file:hover+.__label-button {
+    color: #f5f5f5 !important;
+}
+
+.__label-button:hover~.__path-icon {
+    fill: #f5f5f5 !important;
+}
+
+.__label-button {
+
+    text-align: end;
+    color: var(--verde-agua) !important;
+    height: 100%;
+    padding: 15px 16px 13px 0;
+    font-size: 12px;
+    font-family: museo, museo-sans, sans-serif;
+
+}
+
+.btn-parent {
+    margin-top: 20px;
+    text-align: end;
+    margin-right: 36px;
+}
+
+.btn-parent>.btn {
+    padding: 0px !important;
+}
+
+/*fim falso botão*/
+
+
+@media screen and (max-width: 480px) {
+    .__row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+        background-color: var(--offwhite-fundo);
+        padding: 15px 4px;
+    }
+
+    .__row-botao {
+        justify-content: flex-start;
+    }
+
+    .__span-initial5 {
+        align-self: start;
+        margin-left: 4px;
+        margin-bottom: 4px;
+    }
+
+    .__close-line {
+        display: block;
+    }
+
+    .btn-parent {
+        text-align: start;
+    }
+
+    .__input-group {
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .__card-body-autor {
+        padding: 0px !important;
+    }
+
+    .__row-titulo {
+        display: none;
+
+    }
+
+    .__close-inline {
+        display: none;
+        width: 19px;
+        height: 19px;
+    }
+
+    .__close-notinline {
+        display: inline-block;
+    }
 }

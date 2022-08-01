@@ -1,0 +1,136 @@
+@import url(base.css);
+
+.__label-initial {
+
+    color: var(--cinza-letra);
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.__span-initial {
+    display: block;
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+.__span-quite {
+    padding: 16px 0 16px 0;
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 5px;
+    color: #212529;
+}
+
+
+.__group-in-input{
+    padding: 4px !important;
+    
+}
+
+.__input-quite {
+    max-width: 140px;
+    height: auto;
+}
+
+.__input-quite2 {
+    max-width: 120px;
+    height: auto;
+}
+
+.__grupo{
+    margin-top: 40px;
+}
+
+.form-control{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 30px
+}
+
+.__titulo-de-grupo{
+    margin-bottom: 20px;
+}
+
+.__col-autor-r{
+    padding-right: 36px !important;
+}
+
+.__label-initial-likeplaceholder {
+    font-family: museo;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--cinza-claro-campo);
+}
+
+.__close-notinline {
+    display: none;
+}
+
+
+@media (max-width: 410px) {
+
+    .__label-button {
+        text-align: start;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+
+    .__card-header-autor {
+        display: none;
+
+    }
+
+    .__close-inline {
+        display: none;
+    }
+
+    .__close-notinline {
+        display: inline-block;
+    }
+
+    .card {
+        border: none !important;
+    }
+
+    .panel {
+        border: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {   
+    .col-md-6 {
+        flex: 0 0 auto;
+         width: auto !important; 
+    }
+}
+
+/*essas classe acerta as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
+
+
+@media (max-width: 992px) {
+    .__col-autor-l {
+        padding-right: 0px !important;
+
+    }
+
+    .__col-autor-r {
+        padding-left: 0px !important;
+    }
+}
+
+/*fim classes responsivas de duas colunas*/

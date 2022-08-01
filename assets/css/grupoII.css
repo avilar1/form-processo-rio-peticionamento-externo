@@ -1,5 +1,54 @@
 @import url(base.css);
 
-.__group2 {
-    margin-top: 53px;
+/* .__group2 {
+    margin-top: 40px;
+} */
+
+.__acc-button{
+    padding-left: 2px !important;
+    border-top: solid 1px #cccccc;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--branco) !important;
+}
+
+.accordion-button:focus{
+    border:  solid 0.1px #cccccc !important;
+    box-shadow: none !important;
+}
+
+.accordion{
+    border: solid 1px #cccccc;
+    
+}
+
+.accordion-header{
+    border-bottom: solid 1px #cccccc;
+}
+
+.accordion-button::after{
+    display: none !important;
+}
+
+
+@media screen and (max-width: 480px) {
+    .__acc-button{
+        border-top: none;
+    }
+    .accordion-button:focus{
+        border: none;
+    }
+
+    .accordion{
+        border: none;
+    }
+
+    .accordion-header{
+        border-bottom: none;
+    }
+
+     .accordion-body {
+        background-color: var(--offwhite-fundo);
+     }
 }
