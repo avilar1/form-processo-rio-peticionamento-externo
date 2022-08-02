@@ -102,4 +102,8 @@
         padding-left: 63px;
         padding-right: 63px;
     }
+
+    .__titulo{
+        padding-left: 15px;
+    }
 }
