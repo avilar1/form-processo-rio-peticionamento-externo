@@ -74,10 +74,15 @@
 
 .btn-close{
     height: 0em !important;
+
 }
+
 
 /*inicio falso botão*/
 
+.__icon-file{
+    padding: 1px;
+}
 
 .__icon-file:hover path {
     fill: #f5f5f5 !important;
@@ -88,12 +93,14 @@
 }
 
 .__button-file:hover {
-    background-color: #198754 !important;
-    border-color: #198754 !important;
+    background-color: #09B88A !important;
+    border-color: #09B88A !important;
 }
 
 .__button-file{
     margin-bottom: 3px;
+    font-size: 0.8rem !important;  
+    border-color: var(--verde-agua)!important;;
 }
 
 .__label-button:hover {
@@ -109,13 +116,16 @@
 }
 
 .__label-button {
-
     text-align: end;
-    color: var(--verde-agua) !important;
+    color: var(--verde-agua);
     height: 100%;
-    padding: 15px 16px 13px 0;
+    /* padding: 15px 16px 13px 0; */
+    padding-right: 16px;
+    font-family: museo700, museo;
+    line-height: 1.67 !important;
     font-size: 12px;
-    font-family: museo, museo-sans, sans-serif;
+    /* font-family: museo, museo-sans, sans-serif; */
+    letter-spacing: -0.48px;
 
 }
 
@@ -126,7 +136,7 @@
 }
 
 .btn-parent>.btn {
-    padding: 0px !important;
+    padding: 2px !important;
 }
 
 /*fim falso botão*/
@@ -162,6 +172,11 @@
     .__input-group {
         margin-left: 0px;
     }
+
+    .__card-file{
+        border: none !important;
+    }
+    
 }
 
 
