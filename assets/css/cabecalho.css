@@ -10,8 +10,9 @@
 .__cabecalho-conteudo {
     display: flex;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 15px 36px;
     height: 100px;
+    width: 100vw;
 }
 
 .__painel-login {
@@ -47,17 +48,26 @@
     display: flex;
     height: 50px;
     border: solid 1px #c8c6c6;
+    width: 100vw;
 }
 
 .__titulo {
     font-family: museo;
     font-size: 21px;
-    line-height: 0.95;
+    line-height: 20px;
+    font-weight: 500;
     color: var(--azul-turquesa);
     padding: 15px 0px 15px 36px;
     justify-content: flex-start;
 }
 
+.__painel-logo {
+    min-height: 70px;
+    width: 194px;
+    /* width: calc(194px + (64px + 64px )) ; */
+    /* padding-left: 63px;
+    padding-right: 63px; */
+}
 
 
 @media screen and (max-width: 768px) {
@@ -96,12 +106,7 @@
         align-items: center;
     }
 
-    .__painel-logo {
-        min-height: 70px;
-        width: calc(194px + (64px + 64px )) ;
-        padding-left: 63px;
-        padding-right: 63px;
-    }
+
 
     .__titulo{
         padding-left: 15px;

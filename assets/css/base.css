@@ -13,8 +13,14 @@
 }
 
 @font-face {
+    font-family: museo300;
+    src: url(../fonts/MuseoSans-300.otf) format("truetype");
+}
+
+
+@font-face {
     font-family: museo700;
-    src: url(../fonts/museo-sans-700.ttf) format("truetype");
+    src: url(../fonts/MuseoSans_700.otf) format("truetype");
 }
 
 

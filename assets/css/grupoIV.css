@@ -25,7 +25,11 @@
 .__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 14px;
+    margin-top: 15px;
+}
+
+.__row:first-child{
+    margin-top: 0px !important;
 }
 
 .__row-botao {
@@ -34,8 +38,15 @@
 }
 
 .__row-titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
     border-bottom: solid 1px #cccccc;
-    padding-bottom: 14px;
+    padding-bottom: 13px;
+    color: #212529;
+    font-family: museo;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .__input-quite5 {
@@ -77,6 +88,11 @@
 
 }
 
+.__card-file{
+border-radius: 4px !important;
+border-color: #cccccc !important;
+}
+
 
 /*inicio falso botão*/
 
@@ -100,7 +116,7 @@
 .__button-file{
     margin-bottom: 3px;
     font-size: 0.8rem !important;  
-    border-color: var(--verde-agua)!important;;
+    border-color: var(--verde-agua)!important;
 }
 
 .__label-button:hover {
@@ -120,11 +136,10 @@
     color: var(--verde-agua);
     height: 100%;
     /* padding: 15px 16px 13px 0; */
-    padding-right: 16px;
-    font-family: museo700, museo;
-    line-height: 1.67 !important;
+    /* padding-right: 16px; */
+    line-height: 20px !important;
     font-size: 12px;
-    /* font-family: museo, museo-sans, sans-serif; */
+    font-family: museo700, museo;
     letter-spacing: -0.48px;
 
 }
@@ -134,9 +149,10 @@
     text-align: end;
     margin-right: 36px;
 }
-
+/* 
+padding: 5px 11px 5px 0px !important; */
 .btn-parent>.btn {
-    padding: 2px !important;
+    padding: 5px 11px 5px 6.5px !important;
 }
 
 /*fim falso botão*/

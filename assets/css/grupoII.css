@@ -4,18 +4,30 @@
     margin-top: 40px;
 } */
 
-.__acc-button{
+.__acc-button {
     padding-left: 2px !important;
     border-top: solid 1px #cccccc;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     background-color: var(--branco) !important;
 }
 
-.accordion-button:focus{
-    
+.accordion-button:focus {
+
     box-shadow: none !important;
+}
+
+.__checkbox {
+    color: #d9d9d9;
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    box-shadow: 0px 2px 2px rgb(245 245 245 / 25%);
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    margin: 14px 0px 18px 4px;
+    box-sizing: border-box;
 }
 
 /* .accordion{
@@ -23,48 +35,61 @@
     
 } */
 
-.accordion-body{
+.accordion-body {
     padding: 10px !important;
-    border: solid 1px #cccccc; 
+    border: solid 1px #cccccc;
     margin-top: 5.2px;
 }
 
-.accordion-header{
+.accordion-header {
     border-bottom: solid 1px #cccccc;
-    border: solid 1px #cccccc; 
+    border: solid 1px #cccccc;
 }
 
-.accordion-header:focus{
-    border:  solid 0.1px #cccccc !important;
+.accordion-header:focus {
+    border: solid 0.1px #cccccc !important;
 }
 
 
-.accordion-button::after{
+.accordion-button::after {
     display: none !important;
 }
 
-.accordion-item{
+.accordion-item {
     border: none !important;
 }
 
+.__span-quite2{
+    padding: 13px 0 13px 6px;
+    font-family: museo, museo-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #212529;
+    margin-bottom: 3px;
+}
+
+
 @media screen and (max-width: 480px) {
-    .__acc-button{
+    .__acc-button {
         border-top: none;
     }
-    .accordion-button:focus{
+
+    .accordion-button:focus {
         border: none;
     }
 
-    .accordion{
+    .accordion {
         border: none;
     }
 
-    .accordion-header{
+    .accordion-header {
         border: none;
     }
 
-     .accordion-body {
+    .accordion-body {
         background-color: var(--offwhite-fundo);
         border: none;
-     }
+    }
 }
