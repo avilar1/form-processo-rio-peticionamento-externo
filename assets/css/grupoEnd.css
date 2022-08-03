@@ -7,6 +7,7 @@
     align-items: center;
     color: #09b88a;
     font-family: museo;
+    margin-top: 30px;
 }
 
 .__button-cancel {
@@ -16,6 +17,10 @@
     font-size: 14px !important;
     font-weight: normal !important;
     width: 74px !important;
+    font-family: museo700;
+    font-weight: 600;
+    margin-left: 21px;
+    
 }
 
 .__button-cancel:hover {
@@ -29,13 +34,20 @@
     line-height: 20px !important;
     font-size: 14px !important;
     font-weight: normal !important;
-    
+    font-family: museo700;
+    font-weight: 600;
+    padding: 5px 13px !important;
     
 }
 
 .__button-submit:hover {
     background-color: #198754 !important;
     border-color: #198754 !important;
-
     
+}
+
+#label-input-termo{
+    margin-top: 0px !important;
+    display: inline-block;
+    margin-left: -3px !important;
 }

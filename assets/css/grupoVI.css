@@ -3,3 +3,21 @@
 .__group6>textarea{
     height: auto;
 }
+
+#inputDescricao{
+    font-family: Museo Sans, museo300;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    color: #C3C0C0 !important;
+    margin-top: 5px !important;
+    text-align: start;
+    justify-content: center;
+    padding-bottom: 5px !important;
+    border-color: #CCCCCC !important;
+}
+
+#inputDescricao::-webkit-input-placeholder{
+opacity: .5;
+}
