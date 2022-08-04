@@ -11,41 +11,41 @@
 }
 
 .__button-cancel {
-    color: var(--verde-agua) !important;
+    color: var(--verde-agua)  ;
 
-    line-height: 20px !important;
-    font-size: 14px !important;
-    font-weight: normal !important;
-    width: 74px !important;   
+    line-height: 20px  ;
+    font-size: 14px  ;
+    font-weight: normal  ;
+    width: 74px  ;   
     font-weight: 600;
     margin-left: 21px;
     
 }
 
 .__button-cancel:hover {
-    color: #198754 !important;
-    background-color: transparent !important;
+    color: #198754  ;
+    background-color: transparent  ;
 }
 
 .__button-submit {
-    background-color: var(--verde-agua) !important;
-    border-color: var(--verde-agua) !important;
-    line-height: 20px !important;
-    font-size: 14px !important;
-    font-weight: normal !important;
+    background-color: var(--verde-agua)  ;
+    border-color: var(--verde-agua)  ;
+    line-height: 20px  ;
+    font-size: 14px  ;
+    font-weight: normal  ;
     font-weight: 600;
-    padding: 5px 13px !important;
+    padding: 5px 13px  ;
     
 }
 
 .__button-submit:hover {
-    background-color: #198754 !important;
-    border-color: #198754 !important;
+    background-color: #198754  ;
+    border-color: #198754  ;
     
 }
 
 #label-input-termo{
-    margin-top: 0px !important;
+    margin-top: 0px  ;
     display: inline-block;
-    margin-left: -3px !important;
+    margin-left: -3px  ;
 }

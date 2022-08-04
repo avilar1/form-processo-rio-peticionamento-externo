@@ -15,14 +15,8 @@
     margin-right: 37px;
 }
 
-
 .__group-in-input::-webkit-input-placeholder{
-    /* font-family: museo; */
-    /* font-style: normal; */
     font-weight: 500 ;
-    /* font-size: 15px ; */
-    /* line-height: 20px ; */
-    /* color: #C3C0C0 ; */
     opacity: .5;
     margin-top: 5px ;
     text-align: start;
@@ -92,6 +86,7 @@ select.form-control {
     .__input-quite3 {
         margin-right: 0px;
     }
+
     #inputCity {
         width: 100%;
     }

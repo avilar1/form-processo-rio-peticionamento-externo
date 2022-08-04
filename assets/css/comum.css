@@ -78,7 +78,6 @@
     margin-top: 0px;
 }
 
-
 .__titulo-de-grupo{
     margin-bottom: 20px;
     color: #686868;
@@ -92,7 +91,7 @@
     padding-right: 36px;
 }
 
-.__label-initial-likeplaceholder {
+.__btn-parent label {
     font-family: museo300;
     font-style: normal;
     font-size: 15px;
@@ -102,11 +101,7 @@
     text-align: start;
     justify-content: center;
     padding-bottom: 5px;
-    
-}
-
-.__close-notinline {
-    display: none !important;
+    white-space: nowrap;
 }
 
 .form-row .form-control{
@@ -124,31 +119,23 @@
     opacity: .5;
 }
 
-@media (max-width: 410px) {
-
-    .__label-button {
-        text-align: start !important;
-    }
+.__input-group .form-control::placeholder{
+    opacity: .5;
 }
+
 
 @media (max-width: 992px) {
 
 
-    .__card-header-autor {
-        display: none !important;
-
+    .btn .__card-header-autor {
+        display: none  ;
+    }
+    .btn .__close-inline {
+        display: none  ;
     }
 
-    .__close-inline {
-        display: none !important;
-    }
-
-    .__close-notinline {
-        display: inline-block !important;
-    }
-
-    .panel {
-        border: none !important;
+    .btn .panel {
+        border: none  ;
     }
     
 } 
@@ -159,6 +146,14 @@
          width: auto; 
     }
 }
+
+@media (max-width: 410px) {
+
+    .__label-button {
+        text-align: start  ;
+    }
+}
+
 
 /*essas classe acerta as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
 

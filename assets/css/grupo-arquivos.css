@@ -13,7 +13,7 @@
 }
 
 .card-body {
-    padding: 0px !important;
+    padding: 0px  ;
 }
 
 .__arquivos {
@@ -29,7 +29,7 @@
 }
 
 .__row:first-child{
-    margin-top: 0px !important;
+    margin-top: 0px  ;
 }
 
 .__row-botao {
@@ -49,7 +49,7 @@
 }
 
 .__card-body-autor {
-    padding-top: 0px !important;
+    padding-top: 0px  ;
 }
 
 .__close-inline {
@@ -58,7 +58,7 @@
 }
 
 .__close-line {
-    display: none !important;
+    display: none  ;
 }
 
 .__span-initial5 {
@@ -74,82 +74,109 @@
 }
 
 .__card-header-autor {
-    margin-bottom: 0px !important;
+    margin-bottom: 0px  ;
 }
 
 .btn-close{
-    height: 0em !important;
+    height: 0em  ;
 
 }
 
 .__card-file{
-border-radius: 4px !important;
-border-color: #cccccc !important;
+border-radius: 4px  ;
+border-color: #cccccc  ;
 }
 
 
-/*inicio falso botão*/
+/*-------------------------inicio falso botão*/
+
+.__btn-parent .__button-file {
+    border-color: var(--verde-agua);
+    display: flex;
+}
 
 .__icon-file{
     padding: 1px;
 }
 
 .__icon-file:hover path {
-    fill: #f5f5f5 !important;
+    fill: #f5f5f5  ;
 }
 
 .__path-icon:hover {
-    fill: #f5f5f5 !important;
+    fill: #f5f5f5  ;
 }
 
 .__button-file:hover {
-    background-color: #09B88A !important;
-    border-color: #09B88A !important;
+    background-color: #09B88A  ;
+    border-color: #09B88A  ;
 }
 
 .__button-file{
     margin-bottom: 3px;
-    font-size: 0.8rem !important;  
-    border-color: var(--verde-agua)!important;
+    font-size: 0.8rem  ;  
+    border-color: var(--verde-agua) ;
 }
 
 .__label-button:hover {
-    color: #f5f5f5 !important;
+    color: #f5f5f5  ;
 }
 
 .__icon-file:hover+.__label-button {
-    color: #f5f5f5 !important;
+    color: #f5f5f5  ;
 }
 
 .__label-button:hover~.__path-icon {
-    fill: #f5f5f5 !important;
+    fill: #f5f5f5  ;
 }
 
 .__label-button {
     text-align: end;
     color: var(--verde-agua);
     height: 100%;
-    /* padding: 15px 16px 13px 0; */
-    /* padding-right: 16px; */
-    line-height: 20px !important;
+    line-height: 20px  ;
     font-size: 12px;
     font-family: museo700, museo;
     letter-spacing: -0.48px;
+    white-space: nowrap;
 
 }
 
-.btn-parent {
+.__btn-parent {
     margin-top: 20px;
     text-align: end;
     margin-right: 36px;
-}
-/* 
-padding: 5px 11px 5px 0px !important; */
-.btn-parent>.btn {
-    padding: 5px 11px 5px 6.5px !important;
+    display: flex;
+    flex-direction: column;
+    width: 173px;
 }
 
-/*fim falso botão*/
+.__btn-parent summary{
+    font-family: museo300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #C3C0C0;
+    margin-top: 5px;
+    text-align: start;
+    justify-content: center;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    display: block;
+    cursor: help;
+}
+
+/* 
+padding: 5px 11px 5px 0px  ; */
+.__btn-parent>.btn {
+    padding: 5px 11px 5px 6.5px  ;
+}
+
+/*-------------------------fim falso botão*/
+
+input[type="file"] {
+    display: none;
+}
 
 
 @media screen and (max-width: 480px) {
@@ -172,10 +199,10 @@ padding: 5px 11px 5px 0px !important; */
     }
 
     .__close-line {
-        display: block !important;
+        display: block  ;
     }
 
-    .btn-parent {
+    .__btn-parent {
         text-align: start;
     }
 
@@ -184,7 +211,7 @@ padding: 5px 11px 5px 0px !important; */
     }
 
     .__card-file{
-        border: none !important;
+        border: none  ;
     }
     
 }
@@ -193,7 +220,7 @@ padding: 5px 11px 5px 0px !important; */
 @media (max-width: 992px) {
 
     .__card-body-autor {
-        padding: 0px !important;
+        padding: 0px  ;
     }
 
     .__row-titulo {
@@ -207,7 +234,4 @@ padding: 5px 11px 5px 0px !important; */
         height: 19px;
     }
 
-    .__close-notinline {
-        display: inline-block;
-    }
 }
