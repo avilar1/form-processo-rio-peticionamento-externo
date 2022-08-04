@@ -1,17 +1,14 @@
 @import url(base.css);
 
-.__group1 {
-    margin-bottom: 20px;
-}
-
-.__group1-in-span{
-    margin-left: 4px;
-}
-
 .__span-invalido{
     display: inline-block;
     padding: 2px 6px;
     font-size: 12px;
     background-color: red;
     color: var(--branco);
+}
+
+dl dd {
+    margin-bottom: 20px;
+    margin-left: 4px;
 }

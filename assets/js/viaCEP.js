@@ -40,6 +40,7 @@ function pesquisacep(valor) {
 
     //Nova variável "cep" somente com dígitos.
     var cep = valor.replace(/\D/g, '');
+    
 
     //Verifica se campo cep possui valor informado.
     if (cep != "") {
@@ -51,6 +52,7 @@ function pesquisacep(valor) {
         if (validacep.test(cep)) {
 
             //Preenche os campos com "..." enquanto consulta webservice.
+            
             endEnd.value = "...";
             endBar.value = "...";
             endCid.value = "...";

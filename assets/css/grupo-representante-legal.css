@@ -5,17 +5,17 @@
 } */
 
 .__acc-button {
-    padding-left: 2px !important;
+    padding-left: 2px  ;
     border-top: solid 1px #cccccc;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--branco) !important;
+    background-color: var(--branco)  ;
 }
 
 .accordion-button:focus {
 
-    box-shadow: none !important;
+    box-shadow: none  ;
 }
 
 .__checkbox {
@@ -36,7 +36,7 @@
 } */
 
 .accordion-body {
-    padding: 10px !important;
+    padding: 10px  ;
     border: solid 1px #cccccc;
     margin-top: 5.2px;
 }
@@ -47,21 +47,20 @@
 }
 
 .accordion-header:focus {
-    border: solid 0.1px #cccccc !important;
+    border: solid 0.1px #cccccc  ;
 }
 
 
 .accordion-button::after {
-    display: none !important;
+    display: none  ;
 }
 
 .accordion-item {
-    border: none !important;
+    border: none  ;
 }
 
 .__span-quite2{
     padding: 13px 0 13px 6px;
-    font-family: museo, museo-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;

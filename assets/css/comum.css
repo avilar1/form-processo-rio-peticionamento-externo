@@ -1,22 +1,38 @@
 @import url(base.css);
 
-.__label-initial {
+.__container a{
+    text-decoration: none;
+}
+.__container a:hover{
+    text-decoration: underline;
+}
 
+.__container p {
+    margin-bottom: 0px;
+}
+
+.form-row p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.__label-initial {
     color: var(--cinza-letra);
-    font-family: museo, museo-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     text-align: start;
+}
+
+.__group-in-input {
+    margin-top: 5px;
 }
 
 .__span-initial {
     display: block;
-    font-family: museo, museo-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
-
     font-size: 15px;
     line-height: 20px;
     margin-top: 5px;
@@ -24,9 +40,9 @@
     text-align: start;
 }
 
+
 .__span-quite {
     padding: 16px 0 16px 0;
-    font-family: museo, museo-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -35,15 +51,10 @@
     color: #212529;
 }
 
-a{
-    text-decoration: none !important;
-}
-a:hover{
-    text-decoration: underline !important;
-}
 
-.__group-in-input{
-    padding: 4px !important;
+.form-control .__group-in-input{
+    padding: 4px;
+    margin-top: 5px;
     
 }
 
@@ -67,88 +78,64 @@ a:hover{
     margin-top: 0px;
 }
 
-.form-control{
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    height: 30px
-}
-
 .__titulo-de-grupo{
     margin-bottom: 20px;
     color: #686868;
     font-size: 13px;
     font-weight: 700;
     text-align: start;
+    text-transform: uppercase;
 }
 
-.__col-autor-r{
-    padding-right: 36px !important;
+.__group3-in-in .__col-autor-r{
+    padding-right: 36px;
 }
 
-.__label-initial-likeplaceholder {
-    /* font-family: museo;
-    font-weight: 500;
-    font-size: 15px;
-    color: var(--cinza-claro-campo);
-    line-height: 20px !important; */
-
+.__btn-parent label {
     font-family: museo300;
     font-style: normal;
-    font-weight: 500 !important;
-    font-size: 15px !important;
-    line-height: 20px !important;
-    color: #C3C0C0 !important;
-    opacity: 1;
-    margin-top: 5px !important;
+    font-size: 15px;
+    line-height: 20px;
+    color: #C3C0C0;
+    margin-top: 5px;
     text-align: start;
     justify-content: center;
-    padding-bottom: 5px !important;
-    
+    padding-bottom: 5px;
+    white-space: nowrap;
 }
 
-.__close-notinline {
-    display: none;
+.form-row .form-control{
+    border-color: #cccccc;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    font-style: normal;
+    height: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-.form-control{
-    border-color: #cccccc !important;
-    font-size: 15px !important;
-    padding-top: 10px !important;
-    padding-bottom: 12px !important;
-    font-style: normal !important;
-    
+.form-row .form-control::placeholder{
+    opacity: .5;
 }
 
-
-@media (max-width: 410px) {
-
-    .__label-button {
-        text-align: start;
-    }
+.__input-group .form-control::placeholder{
+    opacity: .5;
 }
+
 
 @media (max-width: 992px) {
 
 
-    .__card-header-autor {
-        display: none;
-
+    .btn .__card-header-autor {
+        display: none  ;
+    }
+    .btn .__close-inline {
+        display: none  ;
     }
 
-    .__close-inline {
-        display: none;
-    }
-
-    .__close-notinline {
-        display: inline-block;
-    }
-
-    /* .card {
-        border: none !important;
-    }
-*/
-    .panel {
-        border: none !important;
+    .btn .panel {
+        border: none  ;
     }
     
 } 
@@ -156,21 +143,29 @@ a:hover{
 @media (min-width: 768px) and (max-width: 992px) {   
     .col-md-6 {
         flex: 0 0 auto;
-         width: auto !important; 
+         width: auto; 
     }
 }
+
+@media (max-width: 410px) {
+
+    .__label-button {
+        text-align: start  ;
+    }
+}
+
 
 /*essas classe acerta as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
 
 
 @media (max-width: 992px) {
-    .__col-autor-l {
-        padding-right: 0px !important;
+    .__group3-in-in .__col-autor-l {
+        padding-right: 0px;
 
     }
 
-    .__col-autor-r {
-        padding-left: 0px !important;
+    .__group3-in-in .__col-autor-r {
+        padding-left: 0px;
     }
 }
 
