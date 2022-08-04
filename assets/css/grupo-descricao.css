@@ -1,0 +1,23 @@
+@import url(base.css);
+
+.__group6>textarea{
+    height: auto;
+}
+
+#inputDescricao{
+    font-family: museo300, museo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #C3C0C0;
+    margin-top: 5px;
+    text-align: start;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-color: #CCCCCC;
+}
+
+#inputDescricao::-webkit-input-placeholder{
+opacity: .5;
+}

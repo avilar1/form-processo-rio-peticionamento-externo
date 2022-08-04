@@ -1,9 +1,10 @@
 @import url(base.css);
 
+
 .__label-initial {
 
     color: var(--cinza-letra);
-    font-family: museo, museo-sans, sans-serif;
+
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -13,7 +14,7 @@
 
 .__span-initial {
     display: block;
-    font-family: museo, museo-sans, sans-serif;
+
     font-style: normal;
     font-weight: 500;
 
@@ -24,9 +25,13 @@
     text-align: start;
 }
 
+.form-row p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .__span-quite {
     padding: 16px 0 16px 0;
-    font-family: museo, museo-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -67,11 +72,6 @@ a:hover{
     margin-top: 0px;
 }
 
-.form-control{
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    height: 30px
-}
 
 .__titulo-de-grupo{
     margin-bottom: 20px;
@@ -79,6 +79,7 @@ a:hover{
     font-size: 13px;
     font-weight: 700;
     text-align: start;
+    text-transform: uppercase;
 }
 
 .__col-autor-r{
@@ -86,7 +87,7 @@ a:hover{
 }
 
 .__label-initial-likeplaceholder {
-    /* font-family: museo;
+    /*
     font-weight: 500;
     font-size: 15px;
     color: var(--cinza-claro-campo);
@@ -110,12 +111,13 @@ a:hover{
     display: none;
 }
 
-.form-control{
-    border-color: #cccccc !important;
-    font-size: 15px !important;
-    padding-top: 10px !important;
-    padding-bottom: 12px !important;
-    font-style: normal !important;
+.form-row .form-control{
+    border-color: #cccccc;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    font-style: normal;
+    height: 30px
     
 }
 

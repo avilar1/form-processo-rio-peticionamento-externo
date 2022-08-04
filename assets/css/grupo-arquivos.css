@@ -44,13 +44,8 @@
     border-bottom: solid 1px #cccccc;
     padding-bottom: 13px;
     color: #212529;
-    font-family: museo;
     font-size: 15px;
     line-height: 20px;
-}
-
-.__input-quite5 {
-    font-family: museo, museo-sans, sans-serif;
 }
 
 .__card-body-autor {
@@ -68,7 +63,6 @@
 
 .__span-initial5 {
     display: block;
-    font-family: museo, museo-sans, sans-serif;
     font-style: normal;
     font-weight: 500;
 

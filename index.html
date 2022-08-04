@@ -17,8 +17,6 @@
 </head>
 
 <body>
-
-
     <header class="__container-cabecalho">
         <div class="__cabecalho">
             <div class="__cabecalho-conteudo">
@@ -29,21 +27,22 @@
             </div>
         </div>
 
-        <div class="__nav-titulo">
+        <nav class="__nav-titulo">
             <h1 class="__titulo">Rever cálculo de IPTU</h1>
-        </div>
+        </nav>
     </header>
 
     <main class="__main">
         <div class="__container">
-
+            <noscript> <p>Esse site precisa de uma linguagem de programação chamada "JavaScript" para funcionar corretamente no seu navegador e esse não se encontra funcionando. <br> Caso tenha dificuldade de acessar essa tela e veja essa mensagem, procure auxílio nos canais da prefeitura.</p> </noscript>
             <form class="form needs-validation" action="" id="formInitial" novalidate>
 
                 <div class="__grupo invalido" style="display: none;">
                     <span class="__span-invalido"> Verifique os erros abaixo e envie novamente</span>
                 </div>
 
-                <div class="__grupo">
+                <section class="__grupo" aria-label="itens de identificação">
+
                     <div class="form-group __group1">
                         <label for="nomeCompleto" class="__label-initial">Nome Completo</label>
                         <span class="__span-initial __group1-in-span" id="nomeCompleto"> João Fernandes Almeida</span>
@@ -56,9 +55,9 @@
                         <label for="EmailCompleto" class="__label-initial">Email</label>
                         <span class="__span-initial __group1-in-span" id="EmailCompleto"> joao.exemplo@email.com</span>
                     </div>
-                </div>
+                </section>
 
-                <div class=" __group2 __grupo">
+                <section class="__grupo __group2" aria-label="representante legal">
                     <!--acc-->
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
@@ -99,11 +98,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
 
-                <div class="__group3 __grupo">
-                    <h2 for="nomeCompleto" class="__label-initial __titulo-de-grupo">ENDEREÇO DA SOLICITAÇÃO</h2>
+                <section class="__grupo __group3" aria-label="campos de preechimento do formulário" id="campos">
+                    <h2 for="campos" class="__label-initial __titulo-de-grupo">Endereço da Solicitação</h2>
 
                     <div class="form-row">
                         <label for="cep" class="__label-initial" >CEP</label>
@@ -157,7 +156,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group __group3-in-in col-md-5 __col-autor-r">
+                        <fieldset class="form-group __group3-in-in col-md-5 __col-autor-r">
                             <label for="inputEstado" class="__label-initial">Estado*</label>
                             <select id="inputEstado" class="form-control custom-select " data-end="uff" required>
                                 <option value="" disabled selected hidden>Selecione</option>
@@ -193,34 +192,32 @@
                             <div class="invalid-feedback">
                                 Selecione uma opção
                             </div>
-                        </div>
+                        </fildset>
 
                     </div>
 
-                </div>
+                </section>
 
-                <div class="__grupo">
-                    <h2 for="nomeCompleto" class="__label-initial __titulo-de-grupo">DOCUMENTOS NECESSÁRIOS</h2>
-
+                <section class="__grupo" aria-label="documentos necessários" id="docsnecessarios">
+                    <h2 for="docsnecessarios" class="__label-initial __titulo-de-grupo">Documentos Necessários</h2>
                     <div>
-                        
                         <li class="__li-3"><span class="__span-quite-3" id="">Calendário completo de pagamento do IPTU 2022</span></li>
                         <li class="__li-3"><span class="__span-quite-3" id="">Informações sobre Taxa de Coleta Domiciliar de Lixo (TCL)</span> </li>
                         <li class="__li-3"><span class="__span-quite-3" id="">Cálculo do IPTU em atraso</span></li>
                         <li class="__li-3"><span class="__span-quite-3" id="">Informativo Valor Venal 2022</span></li>
                     </div>
-                </div>
+                </section>
 
-                <div class="form-group __grupo __group6">
+                <section class="__grupo form-group __group6" aria-label="descricao">
                     <label for="inputDescricao" class=" __label-initial ">Descrição*</label>
                     <textarea class="form-control" rows="6" id="inputDescricao"
                         placeholder="Apresente aqui sua Solicitação" required></textarea>
                     <div class="invalid-feedback">
                         Preencha esse campo
                     </div>
-                </div>
+                </section>
 
-                <div class="__group4 __grupo">
+                <section class="__grupo __group4" aria-label="arquivos">
 
                     <label for="nomeCompleto" class="__label-initial __group4-in __titulo-de-grupo">ANEXAR DOCUMENTOS</label>
                     <div class="card __card-file">
@@ -239,7 +236,7 @@
                                  <div data-file="row">
                                     <div class="__row">
                                     <!--        essa precisa ser excluida, meramente ilustrativo v       -->
-                                       <!--
+                                       
                                         <div class="__row-descricao">
                                         
                                          <span class="__span-initial5">exemplo2.pdf</span>
@@ -263,7 +260,7 @@
                                                 aria-label="Close" data-file="closeB"
                                                 onclick="remove(this.parentElement.parentElement)"></button>
                                         </div>
-                                        -->
+                                       
                                     </div>
                                 </div> 
 
@@ -293,31 +290,27 @@
                                     Selecione os arquivos necessários
                                 </div>
                             </div>
-
                         </div>
+                    </div>
+                </section>
 
-                    </div>
-                    <div class=" __grupo ">
-                        <input type="checkbox" name="termo" id="input-termo" class="__checkbox" style="border-radius: 0.25rem;" required> 
-                        <label for="input-termo" class="__span-quite2 form-check-label" id="label-input-termo">Declaro que li e concordo com os <a href="#">termos de uso</a></label>
-                                <div class="invalid-feedback">
-                                    Necessário
-                                </div>
-                    </div>
-                    <div class="__grupo">
+                <section class="__grupo" aria-label="termo de uso">
+                    <input type="checkbox" name="termo" id="input-termo" class="__checkbox" style="border-radius: 0.25rem;" required> 
+                    <label for="input-termo" class="__span-quite2 form-check-label" id="label-input-termo">Declaro que li e concordo com os <a href="#">termos de uso</a></label>
+                            <div class="invalid-feedback">
+                                Necessário
+                            </div>
+                </section>
+                <section class="__grupo" aria-label="final para enviar ou cancelar">
+                    <div>
                         <label for="nomeCompleto" class="__label-initial __group4-in">*Campos obrigatórios</label>
                     </div>
 
-                </div>
-
-
-                <div class="__group-end">
-                    <button type="submit" class="btn btn-success __button-submit">ENVIAR</button> <a href="#"
-                        class="btn btn-outline-success __button-cancel" style="border: none;">CANCELAR</a>
-                    </br>
-
-                </div>
-
+                    <div class="__group-end">
+                        <button type="submit" class="btn btn-success __button-submit">ENVIAR</button> 
+                        <button type="reset"href="#" class="btn btn-outline-success __button-cancel" style="border: none;">CANCELAR</button> 
+                    </div>
+                </section>
         </div>
         </form>
         </div>
