@@ -15,18 +15,14 @@
     margin-right: 37px;
 }
 
-.__group-in-input {
-    margin-top: 5px;
-
-}
 
 .__group-in-input::-webkit-input-placeholder{
-    font-family: museo300, museo;
-    font-style: normal;
+    /* font-family: museo; */
+    /* font-style: normal; */
     font-weight: 500 ;
-    font-size: 15px ;
-    line-height: 20px ;
-    color: #C3C0C0 ;
+    /* font-size: 15px ; */
+    /* line-height: 20px ; */
+    /* color: #C3C0C0 ; */
     opacity: .5;
     margin-top: 5px ;
     text-align: start;
@@ -34,15 +30,29 @@
     padding-bottom: 5px ;
 }
 
+#inputCity {
+    width: 451px;
+}
+
+#inputComplemento{
+    width: 289px;
+}
+
+#inputBairro, #inputCidade{
+    width: 287px;
+}
+
 #inputnum {
     margin-top: 5px;
+    width: 124px;
 }
 
 #inputEstado {
     margin-top: 5px;
     font-size: auto;
-    padding-top: auto;
+    padding-top: 0px;
     padding-bottom: 0px;
+    width: 213px;
 }
 
 .__row-descricao {
@@ -75,12 +85,15 @@ select.form-control {
         margin-top: 20px;
     }
 
-    .__group-in-input {
-        width: calc(100vw - 36px) !important;
+    .form-group .__group-in-input {
+        width: calc(100vw - 36px);
     }
 
     .__input-quite3 {
         margin-right: 0px;
+    }
+    #inputCity {
+        width: 100%;
     }
 
     #inputnum {

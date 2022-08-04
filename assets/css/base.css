@@ -23,13 +23,3 @@
     src: url(../fonts/MuseoSans_700.otf) format("truetype");
 }
 
-
-::-webkit-input-placeholder,
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    font-family: "museo";
-    src: url(../fonts/MuseoSans_500.otf) format("truetype");
-    font-weight: 400;
-    opacity: 0.1;
-    color: var(--cinza-claro-campo);
-}

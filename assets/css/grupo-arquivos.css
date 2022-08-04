@@ -58,7 +58,7 @@
 }
 
 .__close-line {
-    display: none;
+    display: none !important;
 }
 
 .__span-initial5 {
@@ -172,7 +172,7 @@ padding: 5px 11px 5px 0px !important; */
     }
 
     .__close-line {
-        display: block;
+        display: block !important;
     }
 
     .btn-parent {

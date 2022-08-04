@@ -1,2 +1,6 @@
 @import url(base.css);
 
+.__termoDeUso{
+display: flex;
+flex-direction: row;
+}

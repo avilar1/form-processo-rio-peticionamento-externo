@@ -5,12 +5,11 @@
 }
 
 #inputDescricao{
-    font-family: museo300, museo;
+    font-family: museo;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #C3C0C0;
     margin-top: 5px;
     text-align: start;
     justify-content: center;

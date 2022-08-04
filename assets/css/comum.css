@@ -1,10 +1,23 @@
 @import url(base.css);
 
+.__container a{
+    text-decoration: none;
+}
+.__container a:hover{
+    text-decoration: underline;
+}
+
+.__container p {
+    margin-bottom: 0px;
+}
+
+.form-row p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .__label-initial {
-
     color: var(--cinza-letra);
-
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -12,12 +25,14 @@
     text-align: start;
 }
 
+.__group-in-input {
+    margin-top: 5px;
+}
+
 .__span-initial {
     display: block;
-
     font-style: normal;
     font-weight: 500;
-
     font-size: 15px;
     line-height: 20px;
     margin-top: 5px;
@@ -25,10 +40,6 @@
     text-align: start;
 }
 
-.form-row p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .__span-quite {
     padding: 16px 0 16px 0;
@@ -40,15 +51,10 @@
     color: #212529;
 }
 
-a{
-    text-decoration: none !important;
-}
-a:hover{
-    text-decoration: underline !important;
-}
 
-.__group-in-input{
-    padding: 4px !important;
+.form-control .__group-in-input{
+    padding: 4px;
+    margin-top: 5px;
     
 }
 
@@ -82,33 +88,25 @@ a:hover{
     text-transform: uppercase;
 }
 
-.__col-autor-r{
-    padding-right: 36px !important;
+.__group3-in-in .__col-autor-r{
+    padding-right: 36px;
 }
 
 .__label-initial-likeplaceholder {
-    /*
-    font-weight: 500;
-    font-size: 15px;
-    color: var(--cinza-claro-campo);
-    line-height: 20px !important; */
-
     font-family: museo300;
     font-style: normal;
-    font-weight: 500 !important;
-    font-size: 15px !important;
-    line-height: 20px !important;
-    color: #C3C0C0 !important;
-    opacity: 1;
-    margin-top: 5px !important;
+    font-size: 15px;
+    line-height: 20px;
+    color: #C3C0C0;
+    margin-top: 5px;
     text-align: start;
     justify-content: center;
-    padding-bottom: 5px !important;
+    padding-bottom: 5px;
     
 }
 
 .__close-notinline {
-    display: none;
+    display: none !important;
 }
 
 .form-row .form-control{
@@ -117,15 +115,19 @@ a:hover{
     padding-top: 10px;
     padding-bottom: 12px;
     font-style: normal;
-    height: 30px
-    
+    height: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
+.form-row .form-control::placeholder{
+    opacity: .5;
+}
 
 @media (max-width: 410px) {
 
     .__label-button {
-        text-align: start;
+        text-align: start !important;
     }
 }
 
@@ -133,22 +135,18 @@ a:hover{
 
 
     .__card-header-autor {
-        display: none;
+        display: none !important;
 
     }
 
     .__close-inline {
-        display: none;
+        display: none !important;
     }
 
     .__close-notinline {
-        display: inline-block;
+        display: inline-block !important;
     }
 
-    /* .card {
-        border: none !important;
-    }
-*/
     .panel {
         border: none !important;
     }
@@ -158,7 +156,7 @@ a:hover{
 @media (min-width: 768px) and (max-width: 992px) {   
     .col-md-6 {
         flex: 0 0 auto;
-         width: auto !important; 
+         width: auto; 
     }
 }
 
@@ -166,13 +164,13 @@ a:hover{
 
 
 @media (max-width: 992px) {
-    .__col-autor-l {
-        padding-right: 0px !important;
+    .__group3-in-in .__col-autor-l {
+        padding-right: 0px;
 
     }
 
-    .__col-autor-r {
-        padding-left: 0px !important;
+    .__group3-in-in .__col-autor-r {
+        padding-left: 0px;
     }
 }
 
