@@ -40,6 +40,13 @@
     border: solid 1px #cccccc;
     margin-top: 5.2px;
 }
+.accordion-body .form-row {
+    margin-bottom: 20px;
+}
+
+.show .accordion-body{
+    padding: 10px;
+}
 
 .accordion-header {
     border-bottom: solid 1px #cccccc;

@@ -2,97 +2,72 @@
 
 
 .__cabecalho {
-    height: 100px;
     background-image: linear-gradient(to right, rgba(1, 176, 219, 0.8), rgba(9, 183, 140, 0.8));
     display: flex;
-    justify-content: center;
     font-family: museo;
+    height: 100px;
+    justify-content: center;
 }
 
 .__cabecalho-conteudo {
     display: flex;
     justify-content: space-between;
-    padding: 15px 36px;
     height: 100px;
+    padding: 15px 36px;
     width: 1010px;
 }
 
 .__painel-login {
 
+    align-items: center;
+    align-self: center;
+    border: solid 1px var(--branco);
+    border-radius: 60px;
     color: var(--branco);
-
-
-    height: 20px;
-    padding: 24px 14px;
-
     display: flex;
     flex-direction: row;
+    height: 20px;
     justify-content: center;
-    align-items: center;
-    border-radius: 60px;
-    border: solid 1px var(--branco);
-    align-self: center;
+    padding: 24px 14px;
 }
 
 .__painel-login p {
-    height: 20px;
     font-size: 13.5px;
+    height: 20px;
     line-height: 20px;
     text-align: left;
-
-    white-space: nowrap;
     margin: 0px;
+    white-space: nowrap;
 }
 
 .__nav-titulo {
     background-color: #ffffff;
-    display: flex;
-    height: 50px;
     border: solid 1px #c8c6c6;
-    width: 100vw;
+    display: flex;
     justify-content: center;
+    height: 50px;
+    width: 100vw;
 }
 
 .__titulo {
-    font-size: 21px;
-    line-height: 20px;
-    font-weight: 500;
     color: var(--azul-turquesa);
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 20px;
     justify-content: flex-start;
     padding: 15px 0px 15px 36px;
-    width: calc(1010px - 15px);
-    
+    width: calc(1010px - 15px); 
 }
 
 .__painel-logo {
+    background-image: url(../img/logo-Carioca-Digital.png);
     min-height: 70px;
     width: 194px;
-    /* width: calc(194px + (64px + 64px )) ; */
-    /* padding-left: 63px;
-    padding-right: 63px; */
+
 }
 
 
 @media screen and (max-width: 768px) {
-
-
-    .__painel-login{
-        margin-top: 32px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-
-
-    .__painel-login p {
-        height: 20px;
-        font-size: 13.5px;
-        line-height: 20px;
-        text-align: center;
-        padding: 2px;
-
-        margin: 0px;
-    }
-    
 
     .__cabecalho {
         display: flex;
@@ -103,15 +78,29 @@
     }
 
     .__cabecalho-conteudo {
+        align-items: center;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         width: 100vw;
     }
-
-
 
     .__titulo{
         padding-left: 15px;
     }
+
+    .__painel-login{
+        margin-top: 32px;
+        padding-bottom: 14px;
+        padding-top: 14px;
+    }
+
+    .__painel-login p {
+        height: 20px;
+        font-size: 13.5px;
+        line-height: 20px;
+        margin: 0px;
+        padding: 2px;
+        text-align: center;
+    }
+    
 }

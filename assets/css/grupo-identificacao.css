@@ -1,11 +1,12 @@
 @import url(base.css);
 
+/*emprestado por não necessitar de outro grupo*/
 .__span-invalido{
-    display: inline-block;
-    padding: 2px 6px;
-    font-size: 12px;
     background-color: red;
     color: var(--branco);
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px 6px;
 }
 
 dl dd {

@@ -11,6 +11,15 @@
     margin-bottom: 0px;
 }
 
+.__container h2 {
+    margin-bottom: 20px;
+    color: #686868;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: start;
+    text-transform: uppercase;
+}
+
 .form-row p {
     margin-top: 0;
     margin-bottom: 0;
@@ -77,7 +86,7 @@
 .__grupo:first-child{
     margin-top: 0px;
 }
-
+/* 
 .__titulo-de-grupo{
     margin-bottom: 20px;
     color: #686868;
@@ -85,7 +94,7 @@
     font-weight: 700;
     text-align: start;
     text-transform: uppercase;
-}
+} */
 
 .__group3-in-in .__col-autor-r{
     padding-right: 36px;

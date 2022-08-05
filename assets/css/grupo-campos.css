@@ -8,11 +8,7 @@
 .__group3-in {
     margin-top: 20px;
     display: flex;
-}
-
-.__input-quite3 {
-    padding-left: 0px;
-    margin-right: 37px;
+    justify-content: space-between;
 }
 
 .__group-in-input::-webkit-input-placeholder{
@@ -24,21 +20,26 @@
     padding-bottom: 5px ;
 }
 
-#inputCity {
+#formRowEspecifico{
+    align-self: flex-start;
+}
+
+/*----lista de inputs ----*/
+#inputEnd {
     width: 451px;
 }
 
-#inputComplemento{
+#inputComplemento, #inputCidade{
     width: 289px;
 }
 
-#inputBairro, #inputCidade{
-    width: 287px;
+#inputBairro{
+    width: 288px;
 }
 
 #inputnum {
     margin-top: 5px;
-    width: 124px;
+    width: 126px;
 }
 
 #inputEstado {
@@ -47,7 +48,9 @@
     padding-top: 0px;
     padding-bottom: 0px;
     width: 213px;
+    margin-left: 36px;
 }
+/*----lista de inputs ----*/
 
 .__row-descricao {
     display: flex;
@@ -55,15 +58,6 @@
     justify-content: space-between;
 }
 
-.__span-quite-3 {
-    font-style: normal;
-    font-weight: 500;
-
-    font-size: 15px;
-    line-height: 20px;
-    /* margin-top: 5px; */
-    color: #212529;
-}
 
 select.form-control {
     -webkit-appearance: menulist;
@@ -83,11 +77,8 @@ select.form-control {
         width: calc(100vw - 36px);
     }
 
-    .__input-quite3 {
-        margin-right: 0px;
-    }
 
-    #inputCity {
+    #inputEnd, #inputComplemento, #inputBairro {
         width: 100%;
     }
 
@@ -104,6 +95,7 @@ select.form-control {
     #inputEstado {
         width: 213px;
         padding: 4px;
+        margin-left: 0px;
     }
 
 

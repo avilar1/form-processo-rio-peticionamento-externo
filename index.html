@@ -19,8 +19,9 @@
 <body>
     <header class="__container-cabecalho">
         <div class="__cabecalho">
-            <div class="__cabecalho-conteudo">
-                <img src="assets/img/logo-Carioca-Digital.png" alt="logo Carioca Digital" class="__painel-logo">
+            <div class="__cabecalho-conteudo ">
+                <!-- <img src="assets/img/logo-Carioca-Digital.png" alt="logo Carioca Digital" class="__painel-logo"> -->
+                <div class="__painel-logo"><p>Carioca Digital</p></div>
                 <div class="__painel-login">
                     <p>Olá, JOÃO! Você está conectado(a)</p>
                 </div>
@@ -41,9 +42,7 @@
                     <span class="__span-invalido"> Verifique os erros abaixo e envie novamente</span>
                 </div>
 
-                <div class="__grupo" aria-label="grupo itens de identificação">
-
-                    <dl>     
+                    <dl class="__grupo" aria-label="grupo itens de identificação">     
                         <dt for="nomeCompleto" class="__label-initial">Nome Completo</dt>
                         <dd class="__span-initial __group1-in-span" id="nomeCompleto"> João Fernandes Almeida</dd>
                     
@@ -53,7 +52,7 @@
                         <dt for="EmailCompleto" class="__label-initial">Email</dt>
                         <dd class="__span-initial __group1-in-span" id="EmailCompleto"> joao.exemplo@email.com</dd>
                     </dl>
-                </div>
+                
 
                 <div class="__grupo __group2" aria-label="grupo representante legal">
                     <!--acc-->
@@ -70,7 +69,7 @@
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <div class="mb-3">
+                                    <div class="form-row">
                                         <label for="nomeCompletoInteressado" class="form-label __label-initial">Nome
                                             completo do representado</label>
                                         <input type="text" class="form-control" id="nomeCompletoInteressado" placeholder="Nome e Sobrenome">
@@ -78,7 +77,7 @@
                                             Formato inválido
                                         </div>
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="form-row">
                                         <label for="cpfInteressado" class="form-label __label-initial">CPF do
                                             representado</label>
                                         <input type="text" class="form-control __input-quite" id="cpfInteressado"
@@ -98,8 +97,8 @@
 
 
                 <div class="__grupo __group3" aria-label="grupo campos de preechimento do formulário" id="campos">
-                    <h2 for="campos" class="__label-initial __titulo-de-grupo">Endereço da Solicitação</h2>
-
+                    
+                    <h2 for="campos" class="__label-initial  ">Endereço da Solicitação</h2>
                      <div class="form-row">
                      <fieldset>
                         <label for="cep" class="__label-initial" >CEP</label>
@@ -111,15 +110,15 @@
                     </div>
 
                     <div class="form-row __group3-in">
-                        <fieldset class="form-group __group3-in-in __input-quite3 __col-autor-l">
-                            <label for="inputCity" class="__label-initial">Endereço*</label>
-                            <input type="text" class="form-control __group-in-input" id="inputCity" placeholder="Avenida, Rua, Praça..."  data-end="end" required>
+                        <fieldset class="form-group __group3-in-in  __col-autor-l">
+                            <label for="inputEnd" class="__label-initial">Endereço*</label>
+                            <input type="text" class="form-control __group-in-input" id="inputEnd" placeholder="Avenida, Rua, Praça..."  data-end="end" required>
                             <div class="invalid-feedback">
                                 Formato inválido
                             </div>
                         </fieldset>
                         <fieldset class="form-group __group3-in-in __col-autor-r">
-                            <label for="inputnum" class="__label-initial __input-quite3">Número*</label>
+                            <label for="inputnum" class="__label-initial ">Número*</label>
                             <input type="number" class="form-control " id="inputnum" data-end="num" required>
                             <div class="invalid-feedback">
                                 Formato inválido
@@ -128,7 +127,7 @@
                     </div>
 
                     <div class="form-row __group3-in">
-                        <fieldset class="form-group __group3-in-in __input-quite3 __col-autor-l">
+                        <fieldset class="form-group __group3-in-in  __col-autor-l">
                             <label for="inputComplemento" class="__label-initial ">Complemento</label>
                             <input type="text" class="form-control __group-in-input" id="inputComplemento" data-end="cop" placeholder="Apartamento, Casa...">
                             <div class="invalid-feedback">
@@ -145,7 +144,7 @@
                     </div>
 
                     <div class="form-row __group3-in" id="formRowEspecifico">
-                        <div class="form-group __group3-in-in __input-quite3 __col-autor-l">
+                        <div class="form-group __group3-in-in  __col-autor-l">
                             <label for="inputCidade" class="__label-initial">Cidade*</label>
                             <input type="text" class="form-control __group-in-input" id="inputCidade" data-end="cid" required>
                             <div class="invalid-feedback">
@@ -190,19 +189,19 @@
                                 Selecione uma opção
                             </div>
                         </fildset>
-
                     </div>
-
                 </div>
 
-                <div class="__grupo" aria-label="grupo documentos necessários" id="docsnecessarios">
-                    <h2 for="docsnecessarios" class="__label-initial __titulo-de-grupo">Documentos Necessários</h2>
-                    <div>
-                        <li class="__li-3"><span class="__span-quite-3" id="">Calendário completo de pagamento do IPTU 2022</span></li>
-                        <li class="__li-3"><span class="__span-quite-3" id="">Informações sobre Taxa de Coleta Domiciliar de Lixo (TCL)</span> </li>
-                        <li class="__li-3"><span class="__span-quite-3" id="">Cálculo do IPTU em atraso</span></li>
-                        <li class="__li-3"><span class="__span-quite-3" id="">Informativo Valor Venal 2022</span></li>
-                    </div>
+                <div class="__grupo __grupo-docs" aria-label="grupo documentos necessários">
+                    <h2 class="__label-initial  ">Documentos Necessários</h2>
+                    
+                        <ul>
+                        <li>Calendário completo de pagamento do IPTU 2022</li>
+                        <li>Informações sobre Taxa de Coleta Domiciliar de Lixo (TCL) </li>
+                        <li>Cálculo do IPTU em atraso</li>
+                        <li>Informativo Valor Venal 2022</li>
+                    </ul>
+                    
                 </div>
 
                 <div class="__grupo form-group __group6" aria-label="grupo descricao">
@@ -214,9 +213,9 @@
                     </div>
                 </div>
 
-                <div class="__grupo __group4" aria-label="grupó arquivos">
+                <div class="__grupo __group4" aria-label="grupo arquivos">
 
-                    <label for="nomeCompleto" class="__label-initial __group4-in __titulo-de-grupo">ANEXAR DOCUMENTOS</label>
+                    <h2 class="__label-initial __group4-in  ">ANEXAR DOCUMENTOS</h2>
                     <div class="card __card-file">
                         
                             <div class="__row-titulo">
@@ -263,7 +262,7 @@
 
                                 <!--        essa precisa ser excluida, meramente ilustrativo  ^      -->
 
-
+                            </div>
                                 <div class="input-group __row-botao">                                    
                                 <div class="__btn-parent">
                                     <label class="btn btn-outline-success btn-file __button-file" id="labelbotom" for="arquivo">
@@ -302,7 +301,7 @@
                         <button type="reset"href="#" class="btn btn-outline-success __button-cancel" style="border: none;">CANCELAR</button> 
                     </div>
                 </div>
-        </div>
+        
         </form>
         </div>
         </div>

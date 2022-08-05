@@ -1,6 +1,12 @@
 @import url(base.css);
 
-.__termoDeUso{
-display: flex;
-flex-direction: row;
+.__termoDeUso {
+    display: flex;
+    flex-direction: row;
+}
+
+#label-input-termo {
+    display: inline-block;
+    margin-left: -3px;
+    margin-top: 0px;
 }
