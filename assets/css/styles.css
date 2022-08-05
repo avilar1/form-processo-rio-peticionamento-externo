@@ -1,14 +1,17 @@
 @import url(base.css);
 @import url(cabecalho.css);
-@import url(corpo.css);
-
-@import url(grupo-identificacao.css);
-@import url(grupo-representante-legal.css);
-@import url(grupo-campos.css);
-@import url(grupo-documentos.css);
-@import url(grupo-descricao.css);
-@import url(grupo-arquivos.css);
-@import url(grupo-termo-de-uso.css);
-@import url(grupo-enviar.css);
 
 @import url(comum.css);
+
+@import url(corpo.css);
+
+@import url(grupo-arquivos.css);
+@import url(grupo-campos.css);
+@import url(grupo-descricao.css);
+@import url(grupo-documentos.css);
+@import url(grupo-enviar.css);
+@import url(grupo-identificacao.css);
+@import url(grupo-representante-legal.css);
+@import url(grupo-termo-de-uso.css);
+
+

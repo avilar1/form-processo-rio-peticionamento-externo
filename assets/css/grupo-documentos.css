@@ -1,3 +1,9 @@
-.__li-3 {
+@import url(base.css);
+
+.__grupo-docs li {
     margin-bottom: 10px;
+}
+
+.__grupo-docs ul {
+    list-style: initial;
 }

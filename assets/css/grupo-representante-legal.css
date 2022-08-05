@@ -1,44 +1,36 @@
 @import url(base.css);
 
-/* .__group2 {
-    margin-top: 40px;
-} */
-
-.__acc-button {
-    padding-left: 2px  ;
-    border-top: solid 1px #cccccc;
-}
-
 .accordion-button:not(.collapsed) {
     background-color: var(--branco)  ;
 }
 
-.accordion-button:focus {
-
-    box-shadow: none  ;
+.accordion-button .__checkbox {
+    align-self: flex-start;
 }
 
-.__checkbox {
-    color: #d9d9d9;
-    width: 14px;
-    height: 14px;
-    background: #ffffff;
-    box-shadow: 0px 2px 2px rgb(245 245 245 / 25%);
-    border: 1px solid #D9D9D9;
-    border-radius: 4px;
-    margin: 14px 0px 18px 4px;
-    box-sizing: border-box;
+.accordion-button::after {
+    display: none  ;
 }
 
-/* .accordion{
-     border: solid 1px #cccccc;
-    
-} */
+h3 .accordion-button:not(.collapsed){
+    background: none;
+}
+
+h3 .accordion-button:focus {
+    box-shadow: none;
+}
 
 .accordion-body {
     padding: 10px  ;
     border: solid 1px #cccccc;
     margin-top: 5.2px;
+}
+.accordion-body .form-row {
+    margin-bottom: 20px;
+}
+
+.show .accordion-body{
+    padding: 10px;
 }
 
 .accordion-header {
@@ -48,11 +40,6 @@
 
 .accordion-header:focus {
     border: solid 0.1px #cccccc  ;
-}
-
-
-.accordion-button::after {
-    display: none  ;
 }
 
 .accordion-item {
@@ -75,9 +62,6 @@
         border-top: none;
     }
 
-    .accordion-button:focus {
-        border: none;
-    }
 
     .accordion {
         border: none;
