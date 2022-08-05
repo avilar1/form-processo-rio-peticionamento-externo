@@ -20,12 +20,8 @@
     text-transform: uppercase;
 }
 
-.form-row p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-.__label-initial {
+.__label-comum {
     color: var(--cinza-letra);
     font-style: normal;
     font-weight: 500;
@@ -38,7 +34,7 @@
     margin-top: 5px;
 }
 
-.__span-initial {
+.__span-comum {
     display: block;
     font-style: normal;
     font-weight: 500;
@@ -50,16 +46,17 @@
 }
 
 
-.__span-quite {
-    padding: 16px 0 16px 0;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    margin-top: 5px;
-    color: #212529;
+.__checkbox{
+    color: #d9d9d9;
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    box-shadow: 0px 2px 2px rgb(245 245 245 / 25%);
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    margin: 14px 0px 18px 4px;
+    box-sizing: border-box;
 }
-
 
 .form-control .__group-in-input{
     padding: 4px;
@@ -86,19 +83,8 @@
 .__grupo:first-child{
     margin-top: 0px;
 }
-/* 
-.__titulo-de-grupo{
-    margin-bottom: 20px;
-    color: #686868;
-    font-size: 13px;
-    font-weight: 700;
-    text-align: start;
-    text-transform: uppercase;
-} */
 
-.__group3-in-in .__col-autor-r{
-    padding-right: 36px;
-}
+
 
 .__btn-parent label {
     font-family: museo300;
@@ -113,7 +99,7 @@
     white-space: nowrap;
 }
 
-.form-row .form-control{
+.form-row .form-control, td .__group-in-input{
     border-color: #cccccc;
     font-size: 15px;
     padding-top: 10px;
@@ -136,9 +122,6 @@
 @media (max-width: 992px) {
 
 
-    .btn .__card-header-autor {
-        display: none  ;
-    }
     .btn .__close-inline {
         display: none  ;
     }
@@ -149,33 +132,11 @@
     
 } 
 
-@media (min-width: 768px) and (max-width: 992px) {   
-    .col-md-6 {
-        flex: 0 0 auto;
-         width: auto; 
-    }
-}
-
 @media (max-width: 410px) {
 
     .__label-button {
-        text-align: start  ;
+        text-align: start ;
     }
 }
 
 
-/*essas classe acerta as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
-
-
-@media (max-width: 992px) {
-    .__group3-in-in .__col-autor-l {
-        padding-right: 0px;
-
-    }
-
-    .__group3-in-in .__col-autor-r {
-        padding-left: 0px;
-    }
-}
-
-/*fim classes responsivas de duas colunas*/

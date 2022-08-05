@@ -60,10 +60,16 @@
 }
 
 .__painel-logo {
-    background-image: url(../img/logo-Carioca-Digital.png);
+    background: url(../img/logo-Carioca-Digital.png);
+    background-repeat: no-repeat;
+    background-size: 194px 70px ;
     min-height: 70px;
     width: 194px;
 
+}
+
+.__painel-logo p{
+    display: none;
 }
 
 

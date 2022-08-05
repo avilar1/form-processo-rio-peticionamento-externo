@@ -1,10 +1,5 @@
 @import url(base.css);
 
-.__group4 {
-    display: flex;
-    flex-direction: column;
-}
-
 .__input-group {
     display: flex;
     align-items: center;
@@ -12,8 +7,43 @@
     margin-left: 16px;
 }
 
-.card-body {
-    padding: 0px  ;
+tr {
+    margin-top: 16px;
+}
+
+td .__group-in-input{
+    margin-top: 0px;
+    height: 30px;
+    
+}
+
+.__group-arquivo {
+    display: flex;
+    flex-direction: column;
+}
+
+.__group-arquivo tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding-bottom: 15px;
+    color: #212529;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.__group-arquivo tbody tr, .__group-arquivo tfoot tr{
+    border-bottom: none;
+}
+
+.__group-arquivo thead tr {
+    border-bottom: solid 1px #cccccc;
+    margin-top: 14px;
+    padding-bottom: 13px;
+}
+
+.__group-arquivo tfoot {
+    justify-content: flex-end;
+    padding-right: 36px;
 }
 
 .__arquivos {
@@ -25,35 +55,22 @@
 .__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 15px;
 }
 
-.__row:first-child{
-    margin-top: 0px  ;
-}
-
-.__row-botao {
-    justify-content: flex-end;
-    padding-right: 0px;
-}
-
-.__row-titulo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 15px;
-    border-bottom: solid 1px #cccccc;
-    padding-bottom: 13px;
-    color: #212529;
-    font-size: 15px;
-    line-height: 20px;
-}
-
-.__card-body-autor {
-    padding-top: 0px  ;
+td .__close-inline, .__close-line {
+    width: 19px;
+    height: 19px;
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    color: #000;
+     background: url(../img/x.png);
+     background-repeat: no-repeat;
+     border: 0;
+    border-radius: 0.25rem;
 }
 
 .__close-inline {
-    margin-right: 15px;
     margin-left: 2px;
 }
 
@@ -61,7 +78,7 @@
     display: none  ;
 }
 
-.__span-initial5 {
+.__span-comum-arq {
     display: block;
     font-style: normal;
     font-weight: 500;
@@ -73,22 +90,20 @@
     margin-left: 16px;
 }
 
-.__card-header-autor {
-    margin-bottom: 0px  ;
-}
-
-.btn-close{
-    height: 0em  ;
-
-}
-
 .__card-file{
 border-radius: 4px  ;
 border-color: #cccccc  ;
 }
 
+input[type="file"] {
+    display: none;
+}
 
-/*-------------------------inicio falso botão*/
+.__group-arquivo .invalid-feedback {
+    white-space: nowrap;
+}
+
+/*-------------------------inicio estilização do botão de inserir arquivos*/
 
 .__btn-parent .__button-file {
     border-color: var(--verde-agua);
@@ -139,11 +154,9 @@ border-color: #cccccc  ;
     font-family: museo700, museo;
     letter-spacing: -0.48px;
     white-space: nowrap;
-
 }
 
 .__btn-parent {
-    margin-top: 20px;
     text-align: end;
     margin-right: 36px;
     display: flex;
@@ -166,18 +179,11 @@ border-color: #cccccc  ;
     cursor: help;
 }
 
-/* 
-padding: 5px 11px 5px 0px  ; */
 .__btn-parent>.btn {
     padding: 5px 11px 5px 6.5px  ;
 }
 
-/*-------------------------fim falso botão*/
-
-input[type="file"] {
-    display: none;
-}
-
+/*-------------------------fim estilização do botão de inserir arquivos*/
 
 @media screen and (max-width: 480px) {
     .__row {
@@ -188,11 +194,29 @@ input[type="file"] {
         padding: 15px 4px;
     }
 
-    .__row-botao {
+    .__group-arquivo .card {
+        border: none;
+    }
+
+    .__group-arquivo tr {
+        border-bottom: none;
+    }
+
+    .__group-arquivo thead tr{
+        display: none;
+    }
+
+
+    tbody tr:first-child{
+        padding-top: 15px;
+        margin-top: 0px;
+    }
+
+    .__group-arquivo tfoot {
         justify-content: flex-start;
     }
 
-    .__span-initial5 {
+    .__span-comum-arq {
         align-self: start;
         margin-left: 4px;
         margin-bottom: 4px;
@@ -213,25 +237,18 @@ input[type="file"] {
     .__card-file{
         border: none  ;
     }
-    
-}
 
-
-@media (max-width: 992px) {
-
-    .__card-body-autor {
+    tbody {
         padding: 0px  ;
     }
 
-    .__row-titulo {
-        display: none;
+    .__group-arquivo tr {
+        display: flex;
 
     }
 
     .__close-inline {
         display: none;
-        width: 19px;
-        height: 19px;
     }
-
+    
 }

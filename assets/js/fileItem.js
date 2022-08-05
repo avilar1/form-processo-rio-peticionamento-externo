@@ -4,7 +4,7 @@
 //os arquivos usados devem ser do arrayFiles, visto que, por definição, a API file do JS é readOnly. Ou seja, não é possível a exclusão. Na array é possível
 
 let file = document.querySelector('[data-file="bfile"]')
-let bodyRow = document.querySelector('[data-file="grupo"]')
+// let bodyRow = document.querySelector('[data-file="grupo"]')
 let Row = document.querySelector('[data-file="row"]')
 const arrayFiles = []
 let k = 0
@@ -18,11 +18,11 @@ file.addEventListener('input', (e) => {
             let name = file.files.item(i).name;
             console.log("here is a file name: " + name);
 
-            let divRow = document.createElement("div");
-            let divRowD = document.createElement("div");
+            let divRow = document.createElement("tr");
+            let divRowD = document.createElement("td");
             let spanInputg = document.createElement("span");
             let closeD = document.createElement("button");
-            let divg = document.createElement("div");
+            let divg = document.createElement("td");
             let text = document.createElement("input");
             let close = document.createElement("button");
 
@@ -31,20 +31,20 @@ file.addEventListener('input', (e) => {
 
             divRowD.classList.add("__row-descricao")
 
-            spanInputg.classList.add("__span-initial5")
+            spanInputg.classList.add("__span-comum-arq")
 
-            closeD.classList.add("btn-close", "__close-line", "btn-sm")
+            closeD.classList.add("__close-line")
             closeD.setAttribute("ariaLabel", "close")
             closeD.setAttribute("onclick", "remove(this.parentElement.parentElement)")
 
             divg.classList.add("__input-group")
 
-            text.classList.add("form-control", "__input-quite5", "__group-in-input")
+            text.classList.add("form-control", "__group-in-input")
             text.id = "file-item-descricao" + [i]
             text.value = ""
             text.setAttribute("placeholder", "descreva o documento")
 
-            close.classList.add("btn-close", "__close-inline", "btn-sm")
+            close.classList.add("__close-inline")
             close.setAttribute("ariaLabel", "close")
             close.setAttribute("onclick", "remove(this.parentElement.parentElement)")
 

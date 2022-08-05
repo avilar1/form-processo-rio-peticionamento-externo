@@ -1,11 +1,11 @@
 @import url(base.css);
 
-.__group3 {
+.__group-camp {
     display: flex;
     flex-direction: column;
 }
 
-.__group3-in {
+.__group-camp-in {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -20,11 +20,26 @@
     padding-bottom: 5px ;
 }
 
+.__group-camp-in-in .__col-autor-r{
+    padding-right: 36px;
+}
+
 #formRowEspecifico{
     align-self: flex-start;
 }
 
-/*----lista de inputs ----*/
+.__row-descricao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+select.form-control {
+    -webkit-appearance: menulist;
+}
+
+
+/*----inicio lista de inputs ----*/
 #inputEnd {
     width: 451px;
 }
@@ -42,34 +57,28 @@
     width: 126px;
 }
 
+#FSestado{
+    margin-left: 36px;
+}
+
 #inputEstado {
     margin-top: 5px;
     font-size: auto;
     padding-top: 0px;
     padding-bottom: 0px;
     width: 213px;
-    margin-left: 36px;
 }
-/*----lista de inputs ----*/
-
-.__row-descricao {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+/*---- fim lista de inputs ----*/
 
 
-select.form-control {
-    -webkit-appearance: menulist;
-}
 
 @media screen and (max-width: 480px) {
-    .__group3-in {
+    .__group-camp-in {
         margin-top: 0px;
         flex-direction: column;
     }
 
-    .__group3-in-in>label {
+    .__group-camp-in-in>label {
         margin-top: 20px;
     }
 
@@ -77,6 +86,9 @@ select.form-control {
         width: calc(100vw - 36px);
     }
 
+    #FSestado{
+        margin-left: 0px;
+    }
 
     #inputEnd, #inputComplemento, #inputBairro {
         width: 100%;
@@ -100,3 +112,19 @@ select.form-control {
 
 
 }
+
+/*essas classe acerta as margens esquerda e direita dos formulários de dois itens. Outras soluções são bem vindas.*/
+
+
+@media (max-width: 992px) {
+    .__group-camp-in-in .__col-autor-l {
+        padding-right: 0px;
+
+    }
+
+    .__group-camp-in-in .__col-autor-r {
+        padding-left: 0px;
+    }
+}
+
+/*fim classes responsivas de duas colunas*/
