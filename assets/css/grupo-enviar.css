@@ -17,7 +17,8 @@
     font-weight: 600;
     line-height: 20px  ;
     margin-left: 21px;
-    width: 74px  ;   
+    width: 74px  ;
+    background-color: var(--branco);
 }
 
 .__group-end .__button-cancel:hover {
