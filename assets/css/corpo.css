@@ -2,7 +2,7 @@
 
 
 /*------------------inicial--------------------*/
-.__main {
+body main {
     align-items: center;
     background-color: var(--offwhite-fundo);
     display: flex;
@@ -35,7 +35,7 @@
         margin: 0px;
     }
 
-    .__main{
+    body main{
         padding-top: 0px;
     }
 }

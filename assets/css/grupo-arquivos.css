@@ -1,6 +1,6 @@
 @import url(base.css);
 
-.__input-group {
+.__input-grupo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,18 +11,18 @@ tr {
     margin-top: 16px;
 }
 
-td .__group-in-input{
+td .__grupo-in-input{
     margin-top: 0px;
     height: 30px;
     
 }
 
-.__group-arquivo {
+.__grupo-arquivo {
     display: flex;
     flex-direction: column;
 }
 
-.__group-arquivo tr {
+.__grupo-arquivo tr {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     padding-bottom: 15px;
@@ -31,17 +31,18 @@ td .__group-in-input{
     line-height: 20px;
 }
 
-.__group-arquivo tbody tr, .__group-arquivo tfoot tr{
+.__grupo-arquivo tbody tr, .__grupo-arquivo tfoot tr{
     border-bottom: none;
 }
 
-.__group-arquivo thead tr {
+.__grupo-arquivo thead tr {
     border-bottom: solid 1px #cccccc;
     margin-top: 14px;
     padding-bottom: 13px;
 }
 
-.__group-arquivo tfoot {
+.__grupo-arquivo tfoot {
+    display: flex;
     justify-content: flex-end;
     padding-right: 36px;
 }
@@ -78,7 +79,7 @@ td .__close-inline, .__close-line {
     display: none  ;
 }
 
-.__span-comum-arq {
+.__el-comum-arq {
     display: block;
     font-style: normal;
     font-weight: 500;
@@ -99,7 +100,7 @@ input[type="file"] {
     display: none;
 }
 
-.__group-arquivo .invalid-feedback {
+.__grupo-arquivo .invalid-feedback {
     white-space: nowrap;
 }
 
@@ -107,7 +108,6 @@ input[type="file"] {
 
 .__btn-parent .__button-file {
     border-color: var(--verde-agua);
-    display: flex;
 }
 
 .__icon-file{
@@ -133,19 +133,19 @@ input[type="file"] {
     border-color: var(--verde-agua) ;
 }
 
-.__label-button:hover {
+.__icon-file:hover+.__el-button {
     color: #f5f5f5  ;
 }
 
-.__icon-file:hover+.__label-button {
+.__el-button:hover {
     color: #f5f5f5  ;
 }
 
-.__label-button:hover~.__path-icon {
+.__el-button:hover~.__path-icon {
     fill: #f5f5f5  ;
 }
 
-.__label-button {
+.__el-button {
     text-align: end;
     color: var(--verde-agua);
     height: 100%;
@@ -183,6 +183,11 @@ input[type="file"] {
     padding: 5px 11px 5px 6.5px  ;
 }
 
+.__el-button {
+    text-align: end ;
+}
+
+
 /*-------------------------fim estilização do botão de inserir arquivos*/
 
 @media screen and (max-width: 480px) {
@@ -194,15 +199,15 @@ input[type="file"] {
         padding: 15px 4px;
     }
 
-    .__group-arquivo .card {
+    .__grupo-arquivo .card {
         border: none;
     }
 
-    .__group-arquivo tr {
+    .__grupo-arquivo tr {
         border-bottom: none;
     }
 
-    .__group-arquivo thead tr{
+    .__grupo-arquivo thead tr{
         display: none;
     }
 
@@ -212,11 +217,11 @@ input[type="file"] {
         margin-top: 0px;
     }
 
-    .__group-arquivo tfoot {
+    .__grupo-arquivo tfoot {
         justify-content: flex-start;
     }
 
-    .__span-comum-arq {
+    .__el-comum-arq {
         align-self: start;
         margin-left: 4px;
         margin-bottom: 4px;
@@ -230,7 +235,7 @@ input[type="file"] {
         text-align: start;
     }
 
-    .__input-group {
+    .__input-grupo {
         margin-left: 0px;
     }
 
@@ -242,13 +247,17 @@ input[type="file"] {
         padding: 0px  ;
     }
 
-    .__group-arquivo tr {
+    .__grupo-arquivo tr {
         display: flex;
 
     }
 
     .__close-inline {
         display: none;
+    }
+
+    .__el-button {
+        text-align: start ;
     }
     
 }

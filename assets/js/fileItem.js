@@ -31,15 +31,15 @@ file.addEventListener('input', (e) => {
 
             divRowD.classList.add("__row-descricao")
 
-            spanInputg.classList.add("__span-comum-arq")
+            spanInputg.classList.add("__el-comum-arq")
 
             closeD.classList.add("__close-line")
             closeD.setAttribute("ariaLabel", "close")
             closeD.setAttribute("onclick", "remove(this.parentElement.parentElement)")
 
-            divg.classList.add("__input-group")
+            divg.classList.add("__input-grupo")
 
-            text.classList.add("form-control", "__group-in-input")
+            text.classList.add("form-control", "__grupo-in-input")
             text.id = "file-item-descricao" + [i]
             text.value = ""
             text.setAttribute("placeholder", "descreva o documento")
