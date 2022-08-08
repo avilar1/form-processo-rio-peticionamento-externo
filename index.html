@@ -81,7 +81,7 @@
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <div class="form-row">
+                                    <fieldset  >
                                         <label for="nomeCompletoInteressado" class="form-label __label-comum">Nome
                                             completo do representado</label>
                                         <input type="text" class="form-control" id="nomeCompletoInteressado"
@@ -89,8 +89,8 @@
                                         <div class="invalid-feedback">
                                             Formato inválido
                                         </div>
-                                    </div>
-                                    <div class="form-row">
+                                    </fieldset>
+                                    <fieldset  >
                                         <label for="cpfInteressado" class="form-label __label-comum">CPF do
                                             representado</label>
                                         <input type="text" class="form-control __input-comum" id="cpfInteressado"
@@ -98,7 +98,7 @@
                                         <div class="invalid-feedback">
                                             Formato inválido
                                         </div>
-                                    </div>
+                                    </fieldset>
 
                                     <span class="__el-comum" id="aviso"> Ao anexar documentos, é obrigatório incluir a procuração.</span>
 
@@ -112,8 +112,8 @@
                 <div class="__grupo __grupo-camp" aria-label="grupo campos de preechimento do formulário" id="campos">
 
                     <h2 for="campos" class="__label-comum ">Endereço da Solicitação</h2>
-                    <div class="form-row">
-                        <fieldset>
+                    <fieldset  >
+                        
                             <label for="cep" class="__label-comum">CEP</label>
                             <input type="text" class="form-control __input-comum-esp __grupo-in-input" id="cep"
                                 placeholder="00000-000" data-end="cep" size="10" maxlength="9"
@@ -121,55 +121,59 @@
                             <div class="invalid-feedback">
                                 Formato inválido
                             </div>
-                        </fieldset>
-                    </div>
+                        
+                    </fieldset>
 
-                    <div class="form-row __grupo-camp-in">
-                        <fieldset class="form-grupo __grupo-camp-in-in  __col-autor-l">
+                    <fieldset class="__grupo-camp-in">
+                        <div class="form-grupo __grupo-camp-in-in  __col-autor-l">
                             <label for="inputEnd" class="__label-comum">Endereço*</label>
                             <input type="text" class="form-control __grupo-in-input" id="inputEnd"
                                 placeholder="Avenida, Rua, Praça..." data-end="end" required>
                             <div class="invalid-feedback">
                                 Formato inválido
                             </div>
-                        </fieldset>
-                        <fieldset class="form-grupo __grupo-camp-in-in __col-autor-r">
+                        </div>
+                    
+                    
+                        <div class="form-grupo __grupo-camp-in-in __col-autor-r">
                             <label for="inputnum" class="__label-comum ">Número*</label>
                             <input type="number" class="form-control " id="inputnum" data-end="num" required>
                             <div class="invalid-feedback">
                                 Formato inválido
                             </div>
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
 
-                    <div class="form-row __grupo-camp-in">
-                        <fieldset class="form-grupo __grupo-camp-in-in  __col-autor-l">
+                    <fieldset class="__grupo-camp-in">
+                        <div class="form-grupo __grupo-camp-in-in  __col-autor-l">
                             <label for="inputComplemento" class="__label-comum ">Complemento</label>
                             <input type="text" class="form-control __grupo-in-input" id="inputComplemento"
                                 data-end="cop" placeholder="Apartamento, Casa...">
                             <div class="invalid-feedback">
                                 Formato inválido
                             </div>
-                        </fieldset>
-                        <fieldset class="form-grupo __grupo-camp-in-in __col-autor-r">
+                        </div>
+                    
+                    
+                        <div class="form-grupo __grupo-camp-in-in __col-autor-r">
                             <label for="inputBairro" class="__label-comum">Bairro</label>
                             <input type="text" class="form-control __grupo-in-input" id="inputBairro" data-end="bar">
                             <div class="invalid-feedback">
                                 Formato inválido
                             </div>
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
 
-                    <div class="form-row __grupo-camp-in" id="formRowEspecifico">
-                        <fieldset class="form-grupo __grupo-camp-in-in  __col-autor-l">
+                    <fieldset class="__grupo-camp-in" id="formRowEspecifico">
+                        <div class="form-grupo __grupo-camp-in-in  __col-autor-l">
                             <label for="inputCidade" class="__label-comum">Cidade*</label>
                             <input type="text" class="form-control __grupo-in-input" id="inputCidade" data-end="cid"
                                 required>
                             <div class="invalid-feedback">
                                 Formato inválido
                             </div>
-                        </fieldset>
-
+                        </div>
+                    
                         <fieldset class="form-grupo __grupo-camp-in-in __col-autor-r" id="FSestado">
                             <label for="inputEstado" class="__label-comum" >Estado*</label>
                             <select id="inputEstado" class="form-control custom-select " data-end="uff" required>
@@ -207,7 +211,7 @@
                                 Selecione uma opção
                             </div>
                             </fildset>
-                    </div>
+                        </fieldset>
                 </div>
 
                 <div class="__grupo __grupo-docs" aria-label="grupo documentos necessários">
@@ -222,7 +226,7 @@
 
                 </div>
 
-                <div class="__grupo form-grupo __grupo6" aria-label="grupo descricao">
+                <div class="__grupo form-grupo __grupo-desc" aria-label="grupo descricao">
                     <label for="inputDescricao" class=" __label-comum ">Descrição*</label>
                     <textarea class="form-control" rows="6" id="inputDescricao"
                         placeholder="Apresente aqui sua Solicitação" required></textarea>
@@ -233,8 +237,8 @@
 
                 <div class="__grupo __grupo-arquivo" aria-label="grupo arquivos">
 
-                    <h2 class="__label-comum __grupo4-in  ">Anexar Documentos</h2>
-                    <table border="1" class="card __card-file">
+                    <h2 class="__label-comum">Anexar Documentos</h2>
+                    <table border="1" class="card">
 
                         <thead>
                             <tr>
@@ -245,7 +249,8 @@
 
                         <tbody data-file="row">
 
-                            <!-- <div class="form-grupo __arquivos" data-file="grupo"> -->
+                         <!--        essa precisa ser excluida, meramente ilustrativo  v      -->   
+
                             <tr class="__row">
                                 <td class="__row-descricao">
                                     <span class="__el-comum-arq">exemplo2.pdf</span>
@@ -316,13 +321,12 @@
                 <div class="__grupo" aria-label="grupo final para enviar ou cancelar">
 
                     <div>
-                        <label for="nomeCompleto" class="__label-comum __grupo4-in">*Campos obrigatórios</label>
+                        <label for="nomeCompleto" class="__label-comum">*Campos obrigatórios</label>
                     </div>
 
                     <div class="__grupo-end">
                         <button type="submit" class="btn btn-success __button-submit">ENVIAR</button>
-                        <button type="reset" href="#" class="btn __button-cancel"
-                            style="border: none;">CANCELAR</button>
+                        <button type="reset" href="#" class="btn __button-cancel" style="border: none;">CANCELAR</button>
                     </div>
                 </div>
 
@@ -332,41 +336,15 @@
     </main>
 
 
-
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
-            const alerta = document.querySelector('.invalido')
-
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                            alerta.style.display = ""
-                        }
-
-                        form.classList.add('was-validated')
-
-                    }, false)
-                })
-        })()
-    </script>
-
-
-
     <!-- Atente-se para a ordem: primeiro jquery, depois locastyle, depois o JS do Bootstrap. -->
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <!--tentar transformar isso em módulos de app-->
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/fileButton.js"></script>
     <script src="assets/js/fileItem.js"></script>
     <script src="assets/js/accordion.js"></script>

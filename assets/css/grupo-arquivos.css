@@ -91,7 +91,7 @@ td .__close-inline, .__close-line {
     margin-left: 16px;
 }
 
-.__card-file{
+.__grupo-arquivo table{
 border-radius: 4px  ;
 border-color: #cccccc  ;
 }
@@ -239,7 +239,7 @@ input[type="file"] {
         margin-left: 0px;
     }
 
-    .__card-file{
+    .__grupo-arquivo table{
         border: none  ;
     }
 

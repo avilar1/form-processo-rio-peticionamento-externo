@@ -11,6 +11,7 @@
 }
 
 .__grupo-end .__button-cancel {
+    border: none;
     color: var(--verde-agua)  ;
     font-size: 14px  ;
     font-weight: normal  ;
@@ -22,8 +23,14 @@
 }
 
 .__grupo-end .__button-cancel:hover {
+    border: none;
     background-color: transparent  ;
     color: #198754  ;
+}
+
+
+.__grupo-end>.__button-cancel:focus, .__grupo-end>.__button-submit:focus{
+    box-shadow: none;
 }
 
 .__grupo-end .__button-submit {

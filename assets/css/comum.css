@@ -99,18 +99,15 @@ input[type="checkbox" i]{
     white-space: nowrap;
 }
 
-.form-row .form-control, td .__grupo-in-input{
+fieldset .form-control, td .__grupo-in-input{
     border-color: #cccccc;
     font-size: 15px;
-    padding-top: 10px;
-    padding-bottom: 12px;
     font-style: normal;
     height: 30px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 10px 4px 12px 4px;
 }
 
-.form-row .form-control::placeholder{
+fieldset .form-control::placeholder{
     opacity: .5;
 }
 
