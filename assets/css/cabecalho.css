@@ -40,22 +40,23 @@
     white-space: nowrap;
 }
 
-header nav {
+header .__area-h1 {
     background-color: #ffffff;
     border: solid 1px #c8c6c6;
     display: flex;
     justify-content: center;
     height: 50px;
     width: 100vw;
+    align-items: center;
 }
 
-header nav > h1 {
+header .__area-h1 h1 {
     color: var(--azul-turquesa);
     font-size: 21px;
     font-weight: 500;
     line-height: 20px;
     justify-content: flex-start;
-    padding: 15px 0px 15px 36px;
+    padding-left: 36px;
     width: calc(1010px - 15px); 
 }
 
@@ -90,7 +91,7 @@ header nav > h1 {
         width: 100vw;
     }
 
-    header nav > h1{
+    header .__area-h1 h1{
         padding-left: 15px;
     }
 

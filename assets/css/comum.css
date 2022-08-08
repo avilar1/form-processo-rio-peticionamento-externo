@@ -30,7 +30,7 @@
     text-align: start;
 }
 
-.__grupo-in-input {
+.__input {
     margin-top: 5px;
 }
 
@@ -54,11 +54,11 @@ input[type="checkbox" i]{
     box-shadow: 0px 2px 2px rgb(245 245 245 / 25%);
     border: 1px solid #D9D9D9;
     border-radius: 4px;
-    margin: 14px 0px 18px 4px;
+    margin: 14px 0px 18px 0px;
     box-sizing: border-box;
 }
 
-.form-control .__grupo-in-input{
+.form-control .__input{
     padding: 4px;
     margin-top: 5px;
     
@@ -92,14 +92,13 @@ input[type="checkbox" i]{
     font-size: 15px;
     line-height: 20px;
     color: #C3C0C0;
-    margin-top: 5px;
     text-align: start;
     justify-content: center;
     padding-bottom: 5px;
     white-space: nowrap;
 }
 
-fieldset .form-control, td .__grupo-in-input{
+fieldset .form-control, td .__input{
     border-color: #cccccc;
     font-size: 15px;
     font-style: normal;

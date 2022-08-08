@@ -5,13 +5,14 @@
     flex-direction: column;
 }
 
-.__grupo-camp-in {
+.__grupo-camp > fieldset {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.__grupo-in-input::-webkit-input-placeholder{
+
+.__input::-webkit-input-placeholder{
     font-weight: 500 ;
     opacity: .5;
     margin-top: 5px ;
@@ -20,12 +21,13 @@
     padding-bottom: 5px ;
 }
 
-.__grupo-camp-in-in .__col-autor-r{
-    padding-right: 36px;
+#Especifico-cid{
+    align-self: flex-start;
 }
 
-#formRowEspecifico{
-    align-self: flex-start;
+#Especifico-cep{
+    display: flex;
+    flex-direction: column;
 }
 
 .__row-descricao {
@@ -73,16 +75,24 @@ select.form-control {
 
 
 @media screen and (max-width: 480px) {
-    .__grupo-camp-in {
+    .__grupo-camp > fieldset {
         margin-top: 0px;
         flex-direction: column;
     }
 
-    .__grupo-camp-in-in>label {
+    .__grupo-camp label {
         margin-top: 20px;
     }
 
-    .form-grupo .__grupo-in-input {
+    .__grupo-camp h2 {
+        margin-bottom: 0px;
+    }
+
+    #FSestado label {
+        margin-top: 20px;
+    }
+
+    .__input {
         width: calc(100vw - 36px);
     }
 
@@ -117,12 +127,12 @@ select.form-control {
 
 
 @media (max-width: 992px) {
-    .__grupo-camp-in-in .__col-autor-l {
+    .__grupo-camp fieldset .__col-autor-l {
         padding-right: 0px;
 
     }
 
-    .__grupo-camp-in-in .__col-autor-r {
+    .__grupo-camp fieldset .__col-autor-r {
         padding-left: 0px;
     }
 }
