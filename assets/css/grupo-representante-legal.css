@@ -1,5 +1,15 @@
 @import url(base.css);
 
+ .accordion-button{
+    padding: 0 10px;
+    /* width: calc(100% - 20px); */
+}
+
+.accordion-button div {
+    display: flex;
+    flex-direction: row;
+}
+
 .accordion-button:not(.collapsed) {
     background-color: var(--branco)  ;
 }
@@ -22,15 +32,16 @@ h3 .accordion-button:focus {
 
 .accordion-body {
     padding: 10px  ;
-    border: solid 1px #cccccc;
-    margin-top: 5.2px;
+    border: solid #cccccc;
+    border-width: 0 1px 1px;
+    /* margin-top: 5.2px; */
 }
 .accordion-body fieldset {
     margin-bottom: 20px;
 }
 
 .show .accordion-body{
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .accordion-header {
@@ -46,14 +57,13 @@ h3 .accordion-button:focus {
     border: none  ;
 }
 
-.__el-esp{
-    padding: 13px 0 13px 6px;
+.accordion-item .__el-esp{
+    padding: 13px 0 13px 3px;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: #212529;
-    margin-bottom: 3px;
 }
 
 

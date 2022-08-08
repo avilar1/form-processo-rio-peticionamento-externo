@@ -18,10 +18,19 @@
 
 .__termoDeUso > input[type="checkbox" i]{
     grid-area: check;
+    margin: 2px 0px 18px;
 }
 
 .__termoDeUso .invalid-feedback {
     grid-area: invalid;
+}
+
+.__termoDeUso .__el-esp{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #212529;
 }
 
 

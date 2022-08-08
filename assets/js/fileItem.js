@@ -39,7 +39,7 @@ file.addEventListener('input', (e) => {
 
             divg.classList.add("__input-grupo")
 
-            text.classList.add("form-control", "__grupo-in-input")
+            text.classList.add("form-control", "__input")
             text.id = "file-item-descricao" + [i]
             text.value = ""
             text.setAttribute("placeholder", "descreva o documento")
