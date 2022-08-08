@@ -24,7 +24,8 @@
         Array.prototype.slice.call(forms)
         .forEach(function (form) {
             form.addEventListener( 'reset',  function (event) {
-                
+                form.classList.remove('was-validated')
+                alerta.style.display = "none"
             })
         })   
 })()
