@@ -25,7 +25,7 @@ h3 .accordion-button:focus {
     border: solid 1px #cccccc;
     margin-top: 5.2px;
 }
-.accordion-body .form-row {
+.accordion-body fieldset {
     margin-bottom: 20px;
 }
 

@@ -1,9 +1,10 @@
 
+const accordionT = document.querySelector("[data-accordion]")
 let checkTerceiros = document.querySelector('#check-terceiros')
 let nomeCompletoInteressado = document.querySelector('#nomeCompletoInteressado')
 let cpfInteressado = document.querySelector('#cpfInteressado')
 
-checkTerceiros.addEventListener('click', () => {
+accordionT.addEventListener('click', () => {
     check()
 })
 
