@@ -1,17 +1,17 @@
 @import url(base.css);
 
-.__group-camp {
+.__grupo-camp {
     display: flex;
     flex-direction: column;
 }
 
-.__group-camp-in {
+.__grupo-camp-in {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.__group-in-input::-webkit-input-placeholder{
+.__grupo-in-input::-webkit-input-placeholder{
     font-weight: 500 ;
     opacity: .5;
     margin-top: 5px ;
@@ -20,7 +20,7 @@
     padding-bottom: 5px ;
 }
 
-.__group-camp-in-in .__col-autor-r{
+.__grupo-camp-in-in .__col-autor-r{
     padding-right: 36px;
 }
 
@@ -73,16 +73,16 @@ select.form-control {
 
 
 @media screen and (max-width: 480px) {
-    .__group-camp-in {
+    .__grupo-camp-in {
         margin-top: 0px;
         flex-direction: column;
     }
 
-    .__group-camp-in-in>label {
+    .__grupo-camp-in-in>label {
         margin-top: 20px;
     }
 
-    .form-group .__group-in-input {
+    .form-grupo .__grupo-in-input {
         width: calc(100vw - 36px);
     }
 
@@ -117,12 +117,12 @@ select.form-control {
 
 
 @media (max-width: 992px) {
-    .__group-camp-in-in .__col-autor-l {
+    .__grupo-camp-in-in .__col-autor-l {
         padding-right: 0px;
 
     }
 
-    .__group-camp-in-in .__col-autor-r {
+    .__grupo-camp-in-in .__col-autor-r {
         padding-left: 0px;
     }
 }

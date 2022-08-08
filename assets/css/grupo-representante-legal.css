@@ -4,7 +4,7 @@
     background-color: var(--branco)  ;
 }
 
-.accordion-button .__checkbox {
+.accordion-button > input[type="checkbox" i] {
     align-self: flex-start;
 }
 
@@ -46,7 +46,7 @@ h3 .accordion-button:focus {
     border: none  ;
 }
 
-.__span-quite2{
+.__el-esp{
     padding: 13px 0 13px 6px;
     font-style: normal;
     font-weight: 500;

@@ -1,7 +1,7 @@
 @import url(base.css);
 
 /*emprestado por não necessitar de outro grupo*/
-.__span-invalido{
+.invalido > span{
     background-color: red;
     color: var(--branco);
     display: inline-block;

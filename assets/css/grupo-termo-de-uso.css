@@ -14,7 +14,9 @@
     grid-area: label;
 }
 
-.__termoDeUso .__checkbox{
+
+
+.__termoDeUso > input[type="checkbox" i]{
     grid-area: check;
 }
 

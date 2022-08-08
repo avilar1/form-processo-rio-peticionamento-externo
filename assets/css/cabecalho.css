@@ -40,7 +40,7 @@
     white-space: nowrap;
 }
 
-.__nav-titulo {
+header nav {
     background-color: #ffffff;
     border: solid 1px #c8c6c6;
     display: flex;
@@ -49,7 +49,7 @@
     width: 100vw;
 }
 
-.__titulo {
+header nav > h1 {
     color: var(--azul-turquesa);
     font-size: 21px;
     font-weight: 500;
@@ -90,7 +90,7 @@
         width: 100vw;
     }
 
-    .__titulo{
+    header nav > h1{
         padding-left: 15px;
     }
 
