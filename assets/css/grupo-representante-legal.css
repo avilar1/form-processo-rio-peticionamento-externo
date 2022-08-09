@@ -1,7 +1,7 @@
 @import url(base.css);
 
  .accordion-button{
-    padding: 0 10px;
+    padding: 0;
     /* width: calc(100% - 20px); */
 }
 
@@ -66,6 +66,10 @@ h3 .accordion-button:focus {
     color: #212529;
 }
 
+.accordion-flush .accordion-item .accordion-button {
+    padding: 0 10px;
+}
+
 
 @media screen and (max-width: 480px) {
     .__acc-button {
@@ -79,10 +83,29 @@ h3 .accordion-button:focus {
 
     .accordion-header {
         border: none;
+        border-radius: 4px 4px 0 0;
     }
 
     .accordion-body {
         background-color: var(--offwhite-fundo);
         border: none;
     }
+
+    .accordion-item .__el-esp {
+        padding: 0px 0px 0px 0.75em;
+    }
+
+    .accordion-button{
+        padding: 0px;
+        
+    }
+
+    .accordion-flush .accordion-item .accordion-button {
+        padding: 0;
+    }
+
+    .accordion-flush .accordion-collapse {
+        margin-top: 3px;
+    }
+    
 }

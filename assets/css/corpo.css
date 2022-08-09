@@ -9,36 +9,39 @@ body main {
     justify-content: center;
     padding-bottom: 40px;
     padding-top: 20px;
+    font-family: museo;
+    font-weight: 500;
 
 }
 
 .__container {
 
-    background-color: var(--branco); 
+    background-color: var(--branco);
     border: solid 1px #d9d9d9;
     border-radius: 4px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 38, 0.25);
-    font-family: museo;
-    font-weight: 500;
+
     height: auto;
     /* margin: 0px 162px 0px; */
     min-height: 1484px;
     min-width: 310px;
     padding: 32px 36px 40px;
     width: 686px;
-    
+
 }
 
 @media screen and (max-width: 480px) {
-    
-    .__container{
+
+    .__container {
         padding: 32px 15px 40px;
         margin: 0px;
         border: none;
     }
 
-    body main{
+    body main {
         padding-top: 0px;
         padding-bottom: 0px;
+        font-family: museo;
+        font-weight: 500
     }
 }

@@ -14,7 +14,7 @@
 
 .__input::-webkit-input-placeholder{
     font-weight: 500 ;
-    opacity: .5;
+    color: #B6BABE;
     margin-top: 5px ;
     text-align: start;
     justify-content: center;
@@ -115,7 +115,7 @@ select.form-control {
     }
 
     #cep {
-        width: 91px;
+        
         padding: 4px;
     }
 

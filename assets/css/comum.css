@@ -1,9 +1,10 @@
 @import url(base.css);
 
-.__container a{
+.__container a {
     text-decoration: none;
 }
-.__container a:hover{
+
+.__container a:hover {
     text-decoration: underline;
 }
 
@@ -18,6 +19,10 @@
     font-weight: 700;
     text-align: start;
     text-transform: uppercase;
+}
+
+.__container .form-label {
+    margin-bottom: 5px;
 }
 
 
@@ -45,8 +50,12 @@
     text-align: start;
 }
 
+.__container .invalid-feedback {
+    margin: 0px;
+    font-size: 12px;
+}
 
-input[type="checkbox" i]{
+input[type="checkbox"i] {
     color: #d9d9d9;
     width: 14px;
     height: 14px;
@@ -62,7 +71,7 @@ input[type="checkbox" i]{
 .__input-comum {
     max-width: 140px;
     height: auto;
-    
+
 }
 
 .__input-comum-esp {
@@ -71,20 +80,21 @@ input[type="checkbox" i]{
     margin-top: 5px;
 }
 
-.__grupo{
+.__grupo {
     margin-top: 40px;
 }
 
-.__grupo:nth-child(2){
+.__grupo:nth-child(2) {
     margin-top: 0px;
 }
 
-.__grupo:nth-child(1){
+.__grupo:nth-child(1) {
     margin-bottom: 40px;
     margin-top: 0px;
 }
 
-fieldset .form-control, td .__input{
+fieldset .form-control,
+td .__input {
     border-color: #ccc;
     color: #C3C0C0;
     font-size: 15px;
@@ -94,19 +104,33 @@ fieldset .form-control, td .__input{
     padding: 5px 4px;
 }
 
-fieldset .form-control::placeholder{
-    opacity: .5;
+fieldset .form-control::placeholder {
+    color: #B6BABE;
 }
 
-.__input-grupo .form-control::placeholder{
-    opacity: .5;
+.__input-grupo .form-control::placeholder {
+    color: #B6BABE;
 }
 
-.btn {
+.__container .btn {
+    border-radius: 3px;
     font-weight: 700;
 }
 
+@media screen and (max-width: 480px) {
+    
+    input[type="checkbox"i] {
+        margin: 2px 0px 18px 0px;
+    }
+
+    
+    .__container input[type="text"i] {
+        font-weight: 500;
+        padding: 5px, 4px, 5px, 4px;
+    }
 
 
+    
 
 
+}
