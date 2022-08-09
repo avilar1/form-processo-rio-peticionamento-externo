@@ -2,7 +2,7 @@
 
 
 .__cabecalho {
-    background-image: linear-gradient(to right, rgba(1, 176, 219, 0.8), rgba(9, 183, 140, 0.8));
+    background-image: linear-gradient(to right, rgba(1, 176, 219, 0.8) 53%, rgba(9, 183, 140, 0.8) 77%);
     display: flex;
     font-family: museo;
     height: 100px;
@@ -38,6 +38,7 @@
     text-align: left;
     margin: 0px;
     white-space: nowrap;
+
 }
 
 header .__area-h1 {
@@ -45,7 +46,7 @@ header .__area-h1 {
     border: solid 1px #c8c6c6;
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 54px;
     width: 100vw;
     align-items: center;
 }
@@ -65,51 +66,79 @@ header .__area-h1 h1 {
 .__painel-logo {
     background: url(../img/logo-Carioca-Digital.png);
     background-repeat: no-repeat;
-    background-size: 194px 70px ;
+    background-size: 194px 70px;
     min-height: 70px;
     width: 194px;
 
 }
 
-.__painel-logo p{
+.__painel-logo p {
     display: none;
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .__cabecalho {
+
+    .__container-cabecalho{
         display: flex;
         flex-direction: column;
-        height: 310px;
-        min-width: 310px;
-        justify-content: center;
+    }
+
+    .__cabecalho {
+        height: 90px;
+        width: 100vw;
+        padding: 18px 15px 24px;
+    }
+
+    .__painel-logo {
+        background-size: 148px 54px;
+        height: 54px;
+        width: 148px;
+        min-height: 0px;
+        margin-bottom: -6px; /*assim conseguimos a distância de 18px para baixo do logo, mantendo inalterado o login*/
     }
 
     .__cabecalho-conteudo {
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-end;
+        height: auto;
+        padding: 0px 0px;
         justify-content: center;
-        width: 100vw;
     }
 
-    header .__area-h1 h1{
-        padding-left: 15px;
+    header .__area-h1 {
+        border-bottom: solid 1px #c8c6c6;
     }
 
-    .__painel-login{
-        margin-top: 32px;
-        padding-bottom: 14px;
-        padding-top: 14px;
+    header .__area-h1 h1 {
+        padding: 15px;
+    }
+
+    .__painel-login {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        /* margin-bottom: 7px; */
+        width: 123px;
+        align-self: flex-end;
+        margin-left: 19px;
+
     }
 
     .__painel-login p {
         height: 20px;
-        font-size: 13.5px;
-        line-height: 20px;
+        line-height: 1.48;
         margin: 0px;
-        padding: 2px;
-        text-align: center;
+        text-align: left;
     }
-    
+
+    .__painel-login p span:nth-child(1) {
+        text-transform: uppercase;
+    }
+
+    .__painel-login p span:nth-child(2) {
+        display: none;
+    }
+
 }
