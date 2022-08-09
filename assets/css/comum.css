@@ -85,7 +85,8 @@ input[type="checkbox" i]{
 }
 
 fieldset .form-control, td .__input{
-    border-color: #C3C0C0;
+    border-color: #ccc;
+    color: #C3C0C0;
     font-size: 15px;
     font-style: normal;
     line-height: 20px;

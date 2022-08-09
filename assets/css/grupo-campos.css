@@ -28,6 +28,7 @@
 #Especifico-cep{
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
 }
 
 .__row-descricao {
