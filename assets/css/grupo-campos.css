@@ -40,6 +40,10 @@ select.form-control {
     -webkit-appearance: menulist;
 }
 
+.form-control .__input{
+    padding: 4px;
+    margin-top: 5px;   
+}
 
 /*----inicio lista de inputs ----*/
 #inputEnd {

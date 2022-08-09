@@ -14,7 +14,7 @@
     justify-content: space-between;
     height: 100px;
     padding: 15px 36px;
-    width: 1010px;
+    width: 938px;
 }
 
 .__painel-login {
@@ -52,12 +52,14 @@ header .__area-h1 {
 
 header .__area-h1 h1 {
     color: var(--azul-turquesa);
+    font-family: museo;
     font-size: 21px;
     font-weight: 500;
     line-height: 20px;
     justify-content: flex-start;
     padding-left: 36px;
-    width: calc(1010px - 15px); 
+    width: calc(1010px - 15px);
+    margin-bottom: 0px;
 }
 
 .__painel-logo {

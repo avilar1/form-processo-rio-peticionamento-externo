@@ -58,11 +58,6 @@ input[type="checkbox" i]{
     box-sizing: border-box;
 }
 
-.form-control .__input{
-    padding: 4px;
-    margin-top: 5px;
-    
-}
 
 .__input-comum {
     max-width: 140px;
@@ -80,30 +75,17 @@ input[type="checkbox" i]{
     margin-top: 40px;
 }
 
-.__grupo:first-child{
+.__grupo:nth-child(2){
     margin-top: 0px;
 }
 
-
-
-.__btn-parent label {
-    font-family: museo300;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #C3C0C0;
-    text-align: start;
-    justify-content: center;
-    padding-bottom: 5px;
-    white-space: nowrap;
-}
-
 fieldset .form-control, td .__input{
-    border-color: #cccccc;
+    border-color: #C3C0C0;
     font-size: 15px;
     font-style: normal;
+    line-height: 20px;
     height: 30px;
-    padding: 10px 4px 12px 4px;
+    padding: 5px 4px;
 }
 
 fieldset .form-control::placeholder{
@@ -112,6 +94,10 @@ fieldset .form-control::placeholder{
 
 .__input-grupo .form-control::placeholder{
     opacity: .5;
+}
+
+.btn {
+    font-weight: 700;
 }
 
 
@@ -127,6 +113,7 @@ fieldset .form-control::placeholder{
     }
     
 } 
+
 
 
 

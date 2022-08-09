@@ -26,11 +26,13 @@
 }
 
 .__termoDeUso .__el-esp{
+    color: #212529;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #212529;
+    padding-left: 0.75em;
+
 }
 
 

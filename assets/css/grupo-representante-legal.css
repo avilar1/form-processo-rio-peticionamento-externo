@@ -58,7 +58,7 @@ h3 .accordion-button:focus {
 }
 
 .accordion-item .__el-esp{
-    padding: 13px 0 13px 3px;
+    padding: 13px 0 13px 0.75em;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;

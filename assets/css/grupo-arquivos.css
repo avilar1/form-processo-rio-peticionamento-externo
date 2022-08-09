@@ -104,6 +104,18 @@ border-color: #cccccc  ;
     white-space: nowrap;
 }
 
+.__btn-parent label {
+    font-family: museo300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #C3C0C0;
+    text-align: start;
+    justify-content: center;
+    padding-bottom: 5px;
+    white-space: nowrap;
+}
+
 /*-------------------------inicio estilização do botão de inserir arquivos*/
 
 .__btn-parent .__button-file {
