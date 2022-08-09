@@ -5,8 +5,8 @@
     color: #09b88a;
     display: flex;
     justify-content: center;
-    font-family: museo700, museo;
-    margin-top: 36px;
+    font-family: museo700;
+    font-weight: 700;
     margin-top: 30px;
 }
 
@@ -14,8 +14,6 @@
     border: none;
     color: var(--verde-agua)  ;
     font-size: 14px  ;
-    font-weight: normal  ;
-    font-weight: 600;
     line-height: 20px  ;
     margin-left: 9px;
     width: 74px  ;
@@ -38,8 +36,6 @@
     border-color: var(--verde-agua)  ;
     line-height: 20px  ;
     font-size: 14px  ;
-    font-weight: normal  ;
-    font-weight: 600;
     padding: 5px 13px  ;
 }
 
