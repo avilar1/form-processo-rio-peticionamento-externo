@@ -1,0 +1,144 @@
+@import url(base.css);
+
+
+.__cabecalho {
+    background-image: linear-gradient(to right, rgba(1, 176, 219, 0.8) 53%, rgba(9, 183, 140, 0.8) 77%);
+    display: flex;
+    font-family: museo;
+    height: 100px;
+    justify-content: center;
+}
+
+.__cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 15px 36px;
+    width: 938px;
+}
+
+.__painel-login {
+
+    align-items: center;
+    align-self: center;
+    border: solid 1px var(--branco);
+    border-radius: 60px;
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    justify-content: center;
+    padding: 24px 14px;
+}
+
+.__painel-login p {
+    font-size: 13.5px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0px;
+    white-space: nowrap;
+
+}
+
+header .__area-h1 {
+    background-color: #ffffff;
+    border: solid 1px #c8c6c6;
+    display: flex;
+    justify-content: center;
+    height: 54px;
+    width: 100vw;
+    align-items: center;
+}
+
+header .__area-h1 h1 {
+    color: var(--azul-turquesa);
+    font-family: museo;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 20px;
+    justify-content: flex-start;
+    padding-left: 36px;
+    width: calc(1010px - 15px);
+    margin-bottom: 0px;
+}
+
+.__painel-logo {
+    background: url(../img/logo-Carioca-Digital.png);
+    background-repeat: no-repeat;
+    background-size: 194px 70px;
+    min-height: 70px;
+    width: 194px;
+
+}
+
+.__painel-logo p {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .__container-cabecalho{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .__cabecalho {
+        height: 90px;
+        width: 100vw;
+        padding: 18px 15px 24px;
+    }
+
+    .__painel-logo {
+        background-size: 148px 54px;
+        height: 54px;
+        width: 148px;
+        min-height: 0px;
+        margin-bottom: -6px; /*assim conseguimos a distância de 18px para baixo do logo, mantendo inalterado o login*/
+    }
+
+    .__cabecalho-conteudo {
+        align-items: center;
+        flex-direction: row;
+        align-items: flex-end;
+        height: auto;
+        padding: 0px 0px;
+        justify-content: center;
+    }
+
+    header .__area-h1 {
+        border-bottom: solid 1px #c8c6c6;
+    }
+
+    header .__area-h1 h1 {
+        padding: 15px;
+    }
+
+    .__painel-login {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        /* margin-bottom: 7px; */
+        width: 123px;
+        align-self: flex-end;
+        margin-left: 19px;
+
+    }
+
+    .__painel-login p {
+        height: 20px;
+        line-height: 1.48;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .__painel-login p span:nth-child(1) {
+        text-transform: uppercase;
+    }
+
+    .__painel-login p span:nth-child(2) {
+        display: none;
+    }
+
+}
